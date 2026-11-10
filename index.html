@@ -24,6 +24,9 @@
     <link rel="stylesheet" href="assets/css/main.css">
     <style>
         .about-photo img.profile-photo { width: 100%; max-width: 320px; aspect-ratio: 1 / 1; object-fit: cover; border-radius: 12px; display: block; }
+        .preloader { display: none !important; }
+        .fade-in, .fade-top, .fade-bottom, .fade-left, .fade-right, [data-text-animation] *, .text-animation-effect * { opacity: 1 !important; transform: none !important; }
+        @media (max-width: 767px) { .experience-section .experience-wrapper .skill .skill-item .prodact-item { flex-direction: column; gap: 22px; } .experience-section .experience-wrapper .skill .skill-item .prodact-item .expolore { width: 100%; } .experience-section .experience-wrapper .skill .skill-item .prodact-item .expolore .author-2 { text-align: start; } }
     </style>
 </head>
 
@@ -231,7 +234,7 @@
                                     <div class="job-experience job-experience-1">
                                         <div class="company-name">
                                             <div class="icon">
-                                                <img src="assets/img/icon/about-3-icon-1.png" alt="img not found">
+                                                <img src="assets/img/icon/icon-cotiviti.svg" alt="Cotiviti">
                                             </div>
                                             <div class="author">
                                                 <h5 class="name">Cotiviti</h5>
@@ -245,7 +248,7 @@
                                     <div class="job-experience job-experience-2">
                                         <div class="company-name">
                                             <div class="icon">
-                                                <img src="assets/img/icon/about-3-icon-2.png" alt="img not found">
+                                                <img src="assets/img/icon/icon-prysmian.svg" alt="Prysmian">
                                             </div>
                                             <div class="author">
                                                 <h5 class="name">Prysmian</h5>
@@ -269,7 +272,7 @@
                                     <div class="prodact-item">
                                         <div class="expolore">
                                              <div class="icon">
-                                                <img src="assets/img/icon/about-3-icon-5.png" alt="img not found">
+                                                <img src="assets/img/icon/icon-spark.svg" alt="Apache Spark">
                                             </div>
                                             <div class="author">
                                                 <h5 class="name">Apache Spark</h5>
@@ -282,14 +285,14 @@
                                                 <span class="position">Lakehouse Storage</span>
                                             </div>
                                              <div class="icon">
-                                                <img src="assets/img/icon/about-3-icon-6.png" alt="img not found">
+                                                <img src="assets/img/icon/icon-hudi.svg" alt="Apache Hudi">
                                             </div>
                                         </div>
                                     </div>
                                     <div class="prodact-item">
                                         <div class="expolore">
                                              <div class="icon">
-                                                <img src="assets/img/icon/about-3-icon-7.png" alt="img not found">
+                                                <img src="assets/img/icon/icon-trino.svg" alt="Trino">
                                             </div>
                                             <div class="author">
                                                 <h5 class="name">Trino</h5>
@@ -302,14 +305,14 @@
                                                 <span class="position">Event Streaming</span>
                                             </div>
                                              <div class="icon">
-                                                <img src="assets/img/icon/about-3-icon-8.png" alt="img not found">
+                                                <img src="assets/img/icon/icon-kafka.svg" alt="Apache Kafka">
                                             </div>
                                         </div>
                                     </div>
                                     <div class="prodact-item">
                                         <div class="expolore">
                                              <div class="icon">
-                                                <img src="assets/img/icon/about-3-icon-9.png" alt="img not found">
+                                                <img src="assets/img/icon/icon-debezium.svg" alt="Debezium">
                                             </div>
                                             <div class="author">
                                                 <h5 class="name">Debezium</h5>
@@ -322,7 +325,7 @@
                                                 <span class="position">Cloud Data Warehouse</span>
                                             </div>
                                              <div class="icon">
-                                                <img src="assets/img/icon/about-3-icon-10.png" alt="img not found">
+                                                <img src="assets/img/icon/icon-snowflake.svg" alt="Snowflake">
                                             </div>
                                         </div>
                                     </div>
@@ -357,7 +360,7 @@
                                         data-duration="1" data-stagger="0.2">Engineering expertise</h3>
                                 </div>
                                 <div class="h3-service__video">
-                                    <img src="assets/img/service/h3-services-img-1.png" alt="img not found">
+                                    <img src="assets/img/service/expertise-banner.svg" alt="Data engineering">
                                     
                                 </div>
                             </div>
@@ -367,7 +370,7 @@
                                     <span>01</span>
                                     <h2 class="title title-2 ">Streaming Data Engineering</h2>
                                     <div class="h3-service__content">
-                                        <img src="assets/img/service/h3-services-img-2.png" alt="img not found">
+                                        <img src="assets/img/service/expertise-streaming.svg" alt="Streaming data pipelines">
                                         <div class="h3-service__wrap">
                                             <h2 class="title">Streaming Data Engineering</h2>
                                             <p>I build Spark Structured Streaming pipelines that move data continuously from source systems into storage that is ready for analysis.</p>
@@ -380,7 +383,7 @@
                                     <span>02</span>
                                     <h2 class="title title-2 ">Lakehouse Architecture (Hudi, Trino, S3)</h2>
                                     <div class="h3-service__content">
-                                        <img src="assets/img/service/h3-services-img-2.png" alt="img not found">
+                                        <img src="assets/img/service/expertise-lakehouse.svg" alt="Lakehouse architecture">
                                         <div class="h3-service__wrap">
                                             <h2 class="title">Lakehouse Architecture (Hudi, Trino, S3)</h2>
                                             <p>I design Apache Hudi table layouts on S3 and serve them through Trino, so fresh data can be queried with plain SQL.</p>
@@ -392,7 +395,7 @@
                                     <span>03</span>
                                     <h2 class="title title-2 ">Change Data Capture and Integration</h2>
                                     <div class="h3-service__content">
-                                        <img src="assets/img/service/h3-services-img-2.png" alt="img not found">
+                                        <img src="assets/img/service/expertise-cdc.svg" alt="Change data capture">
                                         <div class="h3-service__wrap">
                                             <h2 class="title">Change Data Capture and Integration</h2>
                                             <p>I use Kafka and Debezium to capture changes from source databases and stream them into downstream platforms as they happen.</p>
@@ -405,7 +408,7 @@
                                     <span>04</span>
                                     <h2 class="title title-2 ">Data Platform Engineering</h2>
                                     <div class="h3-service__content">
-                                        <img src="assets/img/service/h3-services-img-2.png" alt="img not found">
+                                        <img src="assets/img/service/expertise-platform.svg" alt="Data platform engineering">
                                         <div class="h3-service__wrap">
                                             <h2 class="title">Data Platform Engineering</h2>
                                             <p>I build and support data platforms on Snowflake and SAP, with Airflow orchestration and SQL at the core.</p>
@@ -447,7 +450,7 @@
                                         </div>
                                         <div class="content">
                                             <div class="thumb thumb-2">
-                                                <img src="assets/img/service/h3-service-img1.png" alt="img not found">
+                                                <img src="assets/img/service/project-banner-data-mountain.svg" alt="Project visual">
                                             </div>
                                         </div>
                                         <div class="serivce-data serivce-data-2">
@@ -464,7 +467,7 @@
                                         </div>
                                         <div class="content">
                                             <div class="thumb thumb-2">
-                                                <img src="assets/img/service/h3-service-img1.png" alt="img not found">
+                                                <img src="assets/img/service/project-banner-enterprise-platform.svg" alt="Project visual">
                                             </div>
                                         </div>
                                         <div class="serivce-data serivce-data-2">
@@ -481,7 +484,7 @@
                                         </div>
                                         <div class="content">
                                             <div class="thumb thumb-2">
-                                                <img src="assets/img/service/h3-service-img1.png" alt="img not found">
+                                                <img src="assets/img/service/project-banner-streamvault.svg" alt="Project visual">
                                             </div>
                                         </div>
                                         <div class="serivce-data serivce-data-2">
