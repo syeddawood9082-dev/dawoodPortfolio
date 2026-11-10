@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 428" fill="none">
+  <defs>
+    <radialGradient id="tr-glow" cx="50%" cy="45%" r="35%">
+      <stop offset="0%" stop-color="#f59e0b" stop-opacity="0.05"/>
+      <stop offset="100%" stop-color="#f59e0b" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="300" height="428" fill="#111118"/>
+
+  <!-- Radial glow behind trophy -->
+  <circle cx="150" cy="220" r="120" fill="url(#tr-glow)"/>
+
+  <!-- Star above trophy -->
+  <g transform="translate(150, 130)">
+    <path d="M0,-14 L3.5,-5 L13,-5 L5.5,1.5 L8,11 L0,5.5 L-8,11 L-5.5,1.5 L-13,-5 L-3.5,-5 Z"
+          stroke="#f59e0b" stroke-width="2" fill="none" stroke-linejoin="round" opacity="0.7"/>
+  </g>
+
+  <!-- Trophy -->
+  <g transform="translate(150, 230)">
+    <!-- Cup body -->
+    <path d="M-35,-50 L-35,-10 C-35,20 -12,40 0,45 C12,40 35,20 35,-10 L35,-50 Z"
+          stroke="#f59e0b" stroke-width="2" fill="none" stroke-linejoin="round" stroke-linecap="round" opacity="0.7"/>
+
+    <!-- Cup rim -->
+    <line x1="-38" y1="-50" x2="38" y2="-50" stroke="#f59e0b" stroke-width="2" stroke-linecap="round" opacity="0.6"/>
+
+    <!-- Left handle -->
+    <path d="M-35,-38 C-55,-38 -58,-18 -55,-8 C-52,2 -42,8 -35,2"
+          stroke="#f59e0b" stroke-width="2" fill="none" stroke-linecap="round" opacity="0.5"/>
+
+    <!-- Right handle -->
+    <path d="M35,-38 C55,-38 58,-18 55,-8 C52,2 42,8 35,2"
+          stroke="#f59e0b" stroke-width="2" fill="none" stroke-linecap="round" opacity="0.5"/>
+
+    <!-- Stem -->
+    <line x1="0" y1="45" x2="0" y2="65" stroke="#f59e0b" stroke-width="2" stroke-linecap="round" opacity="0.6"/>
+
+    <!-- Base -->
+    <path d="M-25,65 L-30,75 L30,75 L25,65" stroke="#f59e0b" stroke-width="2" fill="none" stroke-linejoin="round" stroke-linecap="round" opacity="0.6"/>
+    <line x1="-32" y1="75" x2="32" y2="75" stroke="#f59e0b" stroke-width="2" stroke-linecap="round" opacity="0.6"/>
+  </g>
+</svg>

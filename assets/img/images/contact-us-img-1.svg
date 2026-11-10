@@ -1,0 +1,97 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 730" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <!-- Base gradient -->
+    <linearGradient id="c1-base" x1="0" y1="0" x2="0.6" y2="1">
+      <stop offset="0%" stop-color="#0f0f12"/>
+      <stop offset="30%" stop-color="#131318"/>
+      <stop offset="60%" stop-color="#171722"/>
+      <stop offset="100%" stop-color="#1a1a2e"/>
+    </linearGradient>
+    <!-- Reverse overlay gradient -->
+    <linearGradient id="c1-overlay" x1="1" y1="0" x2="0.2" y2="0.9">
+      <stop offset="0%" stop-color="#1a1a2e" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#0f0f12" stop-opacity="0.3"/>
+    </linearGradient>
+    <!-- Central warm amber glow -->
+    <radialGradient id="c1-amber" cx="50%" cy="48%" r="35%">
+      <stop offset="0%" stop-color="#f59e0b" stop-opacity="0.05"/>
+      <stop offset="25%" stop-color="#d97706" stop-opacity="0.035"/>
+      <stop offset="50%" stop-color="#b45309" stop-opacity="0.02"/>
+      <stop offset="100%" stop-color="#f59e0b" stop-opacity="0"/>
+    </radialGradient>
+    <!-- Secondary warm glow -->
+    <radialGradient id="c1-warm2" cx="60%" cy="40%" r="25%">
+      <stop offset="0%" stop-color="#fbbf24" stop-opacity="0.03"/>
+      <stop offset="100%" stop-color="#fbbf24" stop-opacity="0"/>
+    </radialGradient>
+    <!-- Subtle purple atmospheric glow -->
+    <radialGradient id="c1-atmos" cx="30%" cy="60%" r="30%">
+      <stop offset="0%" stop-color="#7c3aed" stop-opacity="0.025"/>
+      <stop offset="100%" stop-color="#7c3aed" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="c1-atmos2" cx="78%" cy="35%" r="25%">
+      <stop offset="0%" stop-color="#6366f1" stop-opacity="0.02"/>
+      <stop offset="100%" stop-color="#6366f1" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Base -->
+  <rect width="1920" height="730" fill="url(#c1-base)"/>
+  <rect width="1920" height="730" fill="url(#c1-overlay)"/>
+
+  <!-- Atmospheric glows -->
+  <rect width="1920" height="730" fill="url(#c1-amber)"/>
+  <rect width="1920" height="730" fill="url(#c1-warm2)"/>
+  <rect width="1920" height="730" fill="url(#c1-atmos)"/>
+  <rect width="1920" height="730" fill="url(#c1-atmos2)"/>
+
+  <!-- Topographic/contour lines - flowing wavy horizontals -->
+  <path d="M0,80 Q240,60 480,85 Q720,110 960,75 Q1200,40 1440,80 Q1680,120 1920,70" stroke="#3f3f46" stroke-opacity="0.08" stroke-width="0.8" fill="none"/>
+  <path d="M0,130 Q280,150 560,125 Q840,100 1120,140 Q1400,180 1680,120 Q1800,100 1920,130" stroke="#3f3f46" stroke-opacity="0.06" stroke-width="0.7" fill="none"/>
+  <path d="M0,190 Q320,170 640,200 Q960,230 1280,185 Q1600,140 1920,195" stroke="#3f3f46" stroke-opacity="0.07" stroke-width="0.8" fill="none"/>
+  <path d="M0,260 Q200,280 400,255 Q600,230 800,265 Q1000,300 1200,260 Q1400,220 1600,270 Q1800,320 1920,255" stroke="#3f3f46" stroke-opacity="0.05" stroke-width="0.6" fill="none"/>
+  <path d="M0,320 Q300,340 600,310 Q900,280 1200,330 Q1500,380 1800,310 Q1860,300 1920,320" stroke="#3f3f46" stroke-opacity="0.08" stroke-width="0.7" fill="none"/>
+  <path d="M0,380 Q240,360 480,390 Q720,420 960,375 Q1200,330 1440,385 Q1680,440 1920,370" stroke="#3f3f46" stroke-opacity="0.06" stroke-width="0.6" fill="none"/>
+  <path d="M0,440 Q350,460 700,430 Q1050,400 1400,450 Q1660,480 1920,435" stroke="#3f3f46" stroke-opacity="0.07" stroke-width="0.7" fill="none"/>
+  <path d="M0,510 Q260,490 520,520 Q780,550 1040,505 Q1300,460 1560,515 Q1740,550 1920,500" stroke="#3f3f46" stroke-opacity="0.05" stroke-width="0.6" fill="none"/>
+  <path d="M0,570 Q300,590 600,560 Q900,530 1200,575 Q1500,620 1800,560 Q1860,550 1920,570" stroke="#3f3f46" stroke-opacity="0.06" stroke-width="0.7" fill="none"/>
+  <path d="M0,630 Q280,610 560,640 Q840,670 1120,625 Q1400,580 1680,640 Q1800,660 1920,635" stroke="#3f3f46" stroke-opacity="0.04" stroke-width="0.6" fill="none"/>
+  <path d="M0,690 Q350,710 700,685 Q1050,660 1400,700 Q1660,720 1920,690" stroke="#3f3f46" stroke-opacity="0.05" stroke-width="0.5" fill="none"/>
+
+  <!-- Connection nodes - scattered small dots -->
+  <circle cx="320" cy="180" r="2" fill="#a1a1aa" opacity="0.12"/>
+  <circle cx="580" cy="310" r="2.5" fill="#d4d4d8" opacity="0.1"/>
+  <circle cx="780" cy="150" r="1.8" fill="#a1a1aa" opacity="0.08"/>
+  <circle cx="960" cy="380" r="3" fill="#fbbf24" opacity="0.08"/>
+  <circle cx="1100" cy="250" r="2" fill="#d4d4d8" opacity="0.1"/>
+  <circle cx="1340" cy="420" r="2.5" fill="#a1a1aa" opacity="0.09"/>
+  <circle cx="1520" cy="200" r="2" fill="#d4d4d8" opacity="0.08"/>
+  <circle cx="1680" cy="340" r="1.8" fill="#a1a1aa" opacity="0.1"/>
+  <circle cx="440" cy="480" r="2" fill="#a1a1aa" opacity="0.07"/>
+  <circle cx="850" cy="520" r="2.5" fill="#d4d4d8" opacity="0.08"/>
+  <circle cx="1200" cy="560" r="2" fill="#a1a1aa" opacity="0.09"/>
+  <circle cx="1580" cy="510" r="1.8" fill="#d4d4d8" opacity="0.07"/>
+  <circle cx="200" cy="400" r="2.2" fill="#a1a1aa" opacity="0.08"/>
+  <circle cx="1750" cy="150" r="2" fill="#a1a1aa" opacity="0.06"/>
+  <circle cx="670" cy="600" r="2.2" fill="#d4d4d8" opacity="0.06"/>
+  <circle cx="1420" cy="130" r="1.8" fill="#a1a1aa" opacity="0.07"/>
+
+  <!-- Thin connecting lines between select nodes suggesting a network -->
+  <line x1="320" y1="180" x2="580" y2="310" stroke="#71717a" stroke-opacity="0.05" stroke-width="0.5"/>
+  <line x1="580" y1="310" x2="780" y2="150" stroke="#71717a" stroke-opacity="0.04" stroke-width="0.4"/>
+  <line x1="780" y1="150" x2="1100" y2="250" stroke="#71717a" stroke-opacity="0.05" stroke-width="0.5"/>
+  <line x1="960" y1="380" x2="1100" y2="250" stroke="#71717a" stroke-opacity="0.04" stroke-width="0.4"/>
+  <line x1="1100" y1="250" x2="1340" y2="420" stroke="#71717a" stroke-opacity="0.05" stroke-width="0.5"/>
+  <line x1="1340" y1="420" x2="1520" y2="200" stroke="#71717a" stroke-opacity="0.04" stroke-width="0.4"/>
+  <line x1="1520" y1="200" x2="1680" y2="340" stroke="#71717a" stroke-opacity="0.05" stroke-width="0.5"/>
+  <line x1="580" y1="310" x2="960" y2="380" stroke="#71717a" stroke-opacity="0.03" stroke-width="0.4"/>
+  <line x1="440" y1="480" x2="850" y2="520" stroke="#71717a" stroke-opacity="0.04" stroke-width="0.4"/>
+  <line x1="850" y1="520" x2="1200" y2="560" stroke="#71717a" stroke-opacity="0.04" stroke-width="0.4"/>
+  <line x1="1200" y1="560" x2="1580" y2="510" stroke="#71717a" stroke-opacity="0.035" stroke-width="0.4"/>
+  <line x1="960" y1="380" x2="850" y2="520" stroke="#71717a" stroke-opacity="0.03" stroke-width="0.3"/>
+  <line x1="1340" y1="420" x2="1200" y2="560" stroke="#71717a" stroke-opacity="0.03" stroke-width="0.3"/>
+  <line x1="200" y1="400" x2="320" y2="180" stroke="#71717a" stroke-opacity="0.03" stroke-width="0.3"/>
+  <line x1="200" y1="400" x2="440" y2="480" stroke="#71717a" stroke-opacity="0.035" stroke-width="0.3"/>
+  <line x1="1680" y1="340" x2="1750" y2="150" stroke="#71717a" stroke-opacity="0.03" stroke-width="0.3"/>
+  <line x1="1580" y1="510" x2="1680" y2="340" stroke="#71717a" stroke-opacity="0.03" stroke-width="0.3"/>
+</svg>

@@ -1,0 +1,122 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 945 900" fill="none">
+  <defs>
+    <linearGradient id="f1-bg" x1="0" y1="0" x2="0.3" y2="1">
+      <stop offset="0%" stop-color="#111118"/>
+      <stop offset="100%" stop-color="#1a1a2e"/>
+    </linearGradient>
+    <radialGradient id="f1-glow-violet" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#8b5cf6" stop-opacity="0.10"/>
+      <stop offset="100%" stop-color="#8b5cf6" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="f1-glow-cyan" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#06b6d4" stop-opacity="0.10"/>
+      <stop offset="100%" stop-color="#06b6d4" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="f1-glow-emerald" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#10b981" stop-opacity="0.10"/>
+      <stop offset="100%" stop-color="#10b981" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="945" height="900" fill="url(#f1-bg)"/>
+
+  <!-- Hex grid pattern at 3% opacity -->
+  <g opacity="0.03" stroke="#ffffff" stroke-width="0.5" fill="none">
+    <path d="M472.5,80 l20,12 l0,24 l-20,12 l-20,-12 l0,-24 z"/>
+    <path d="M432.5,80 l20,12 l0,24 l-20,12 l-20,-12 l0,-24 z"/>
+    <path d="M512.5,80 l20,12 l0,24 l-20,12 l-20,-12 l0,-24 z"/>
+    <path d="M452.5,128 l20,12 l0,24 l-20,12 l-20,-12 l0,-24 z"/>
+    <path d="M492.5,128 l20,12 l0,24 l-20,12 l-20,-12 l0,-24 z"/>
+    <path d="M472.5,176 l20,12 l0,24 l-20,12 l-20,-12 l0,-24 z"/>
+    <path d="M432.5,176 l20,12 l0,24 l-20,12 l-20,-12 l0,-24 z"/>
+    <path d="M512.5,176 l20,12 l0,24 l-20,12 l-20,-12 l0,-24 z"/>
+    <path d="M452.5,224 l20,12 l0,24 l-20,12 l-20,-12 l0,-24 z"/>
+    <path d="M492.5,224 l20,12 l0,24 l-20,12 l-20,-12 l0,-24 z"/>
+    <path d="M472.5,700 l20,12 l0,24 l-20,12 l-20,-12 l0,-24 z"/>
+    <path d="M432.5,700 l20,12 l0,24 l-20,12 l-20,-12 l0,-24 z"/>
+    <path d="M512.5,700 l20,12 l0,24 l-20,12 l-20,-12 l0,-24 z"/>
+    <path d="M452.5,748 l20,12 l0,24 l-20,12 l-20,-12 l0,-24 z"/>
+    <path d="M492.5,748 l20,12 l0,24 l-20,12 l-20,-12 l0,-24 z"/>
+    <path d="M392.5,128 l20,12 l0,24 l-20,12 l-20,-12 l0,-24 z"/>
+    <path d="M532.5,128 l20,12 l0,24 l-20,12 l-20,-12 l0,-24 z"/>
+    <path d="M392.5,224 l20,12 l0,24 l-20,12 l-20,-12 l0,-24 z"/>
+    <path d="M532.5,224 l20,12 l0,24 l-20,12 l-20,-12 l0,-24 z"/>
+    <path d="M392.5,700 l20,12 l0,24 l-20,12 l-20,-12 l0,-24 z"/>
+    <path d="M532.5,700 l20,12 l0,24 l-20,12 l-20,-12 l0,-24 z"/>
+  </g>
+
+  <!-- === TOP NODE: Brain/AI in Violet === -->
+  <g transform="translate(472.5, 280)">
+    <!-- Radial glow -->
+    <circle cx="0" cy="0" r="90" fill="url(#f1-glow-violet)"/>
+    <!-- Node circle -->
+    <circle cx="0" cy="0" r="60" stroke="#8b5cf6" stroke-width="1.5" fill="none" opacity="0.25"/>
+    <circle cx="0" cy="0" r="60" stroke="#8b5cf6" stroke-width="0.5" fill="none" opacity="0.08" stroke-dasharray="4 8"/>
+    <!-- Brain icon: two curves forming brain outline -->
+    <path d="M-14,-12 C-14,-22 -4,-26 0,-20 C4,-26 14,-22 14,-12 C14,-4 8,4 0,8 C-8,4 -14,-4 -14,-12 Z" stroke="#8b5cf6" stroke-width="2" fill="none" stroke-linecap="round" opacity="0.7"/>
+    <path d="M0,-20 C0,-14 0,0 0,8" stroke="#8b5cf6" stroke-width="1.5" fill="none" stroke-linecap="round" opacity="0.5"/>
+    <!-- Subtle pulsing ring -->
+    <circle cx="0" cy="0" r="72" stroke="#8b5cf6" stroke-width="0.3" fill="none" opacity="0.06" stroke-dasharray="2 6"/>
+  </g>
+
+  <!-- === MIDDLE NODE: Shield in Cyan === -->
+  <g transform="translate(472.5, 450)">
+    <!-- Radial glow -->
+    <circle cx="0" cy="0" r="90" fill="url(#f1-glow-cyan)"/>
+    <!-- Node circle -->
+    <circle cx="0" cy="0" r="60" stroke="#06b6d4" stroke-width="1.5" fill="none" opacity="0.25"/>
+    <circle cx="0" cy="0" r="60" stroke="#06b6d4" stroke-width="0.5" fill="none" opacity="0.08" stroke-dasharray="4 8"/>
+    <!-- Shield icon: geometric shield outline -->
+    <path d="M0,-18 L-16,-10 L-16,4 C-16,14 -6,22 0,26 C6,22 16,14 16,4 L16,-10 Z" stroke="#06b6d4" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" opacity="0.7"/>
+    <!-- Shield center line -->
+    <line x1="0" y1="-10" x2="0" y2="18" stroke="#06b6d4" stroke-width="1" opacity="0.3"/>
+    <!-- Subtle pulsing ring -->
+    <circle cx="0" cy="0" r="72" stroke="#06b6d4" stroke-width="0.3" fill="none" opacity="0.06" stroke-dasharray="2 6"/>
+  </g>
+
+  <!-- === BOTTOM NODE: Database/Layers in Emerald === -->
+  <g transform="translate(472.5, 620)">
+    <!-- Radial glow -->
+    <circle cx="0" cy="0" r="90" fill="url(#f1-glow-emerald)"/>
+    <!-- Node circle -->
+    <circle cx="0" cy="0" r="60" stroke="#10b981" stroke-width="1.5" fill="none" opacity="0.25"/>
+    <circle cx="0" cy="0" r="60" stroke="#10b981" stroke-width="0.5" fill="none" opacity="0.08" stroke-dasharray="4 8"/>
+    <!-- Database: 3 stacked ellipses -->
+    <ellipse cx="0" cy="-12" rx="18" ry="7" stroke="#10b981" stroke-width="2" fill="none" opacity="0.7"/>
+    <ellipse cx="0" cy="0" rx="18" ry="7" stroke="#10b981" stroke-width="2" fill="none" opacity="0.5"/>
+    <ellipse cx="0" cy="12" rx="18" ry="7" stroke="#10b981" stroke-width="2" fill="none" opacity="0.7"/>
+    <!-- Side lines connecting ellipses -->
+    <line x1="-18" y1="-12" x2="-18" y2="12" stroke="#10b981" stroke-width="1.5" opacity="0.4"/>
+    <line x1="18" y1="-12" x2="18" y2="12" stroke="#10b981" stroke-width="1.5" opacity="0.4"/>
+    <!-- Subtle pulsing ring -->
+    <circle cx="0" cy="0" r="72" stroke="#10b981" stroke-width="0.3" fill="none" opacity="0.06" stroke-dasharray="2 6"/>
+  </g>
+
+  <!-- === CONNECTING LINES: gentle S-curves === -->
+  <!-- Top to Middle -->
+  <path d="M472.5,340 C472.5,365 450,385 450,400 C450,415 472.5,425 472.5,390" stroke="rgba(255,255,255,0.15)" stroke-width="1" fill="none"/>
+  <path d="M472.5,340 C490,365 495,380 472.5,390" stroke="rgba(255,255,255,0.12)" stroke-width="0.8" fill="none"/>
+  <!-- Data flow dots on top-to-middle connection -->
+  <circle cx="470" cy="352" r="1.5" fill="white" opacity="0.12"/>
+  <circle cx="465" cy="365" r="1.2" fill="white" opacity="0.10"/>
+  <circle cx="460" cy="378" r="1.5" fill="white" opacity="0.08"/>
+  <circle cx="475" cy="358" r="1" fill="white" opacity="0.10"/>
+  <circle cx="480" cy="370" r="1.2" fill="white" opacity="0.08"/>
+  <circle cx="478" cy="385" r="1" fill="white" opacity="0.12"/>
+
+  <!-- Middle to Bottom -->
+  <path d="M472.5,510 C472.5,535 450,545 450,560 C450,575 472.5,555 472.5,560" stroke="rgba(255,255,255,0.15)" stroke-width="1" fill="none"/>
+  <path d="M472.5,510 C490,530 495,545 472.5,560" stroke="rgba(255,255,255,0.12)" stroke-width="0.8" fill="none"/>
+  <!-- Data flow dots on middle-to-bottom connection -->
+  <circle cx="470" cy="522" r="1.5" fill="white" opacity="0.12"/>
+  <circle cx="465" cy="535" r="1.2" fill="white" opacity="0.10"/>
+  <circle cx="460" cy="548" r="1.5" fill="white" opacity="0.08"/>
+  <circle cx="478" cy="528" r="1" fill="white" opacity="0.10"/>
+  <circle cx="480" cy="540" r="1.2" fill="white" opacity="0.08"/>
+  <circle cx="475" cy="553" r="1" fill="white" opacity="0.12"/>
+
+  <!-- Additional subtle connective tissue -->
+  <line x1="472.5" y1="340" x2="472.5" y2="390" stroke="rgba(255,255,255,0.06)" stroke-width="0.5" stroke-dasharray="3 5"/>
+  <line x1="472.5" y1="510" x2="472.5" y2="560" stroke="rgba(255,255,255,0.06)" stroke-width="0.5" stroke-dasharray="3 5"/>
+</svg>
