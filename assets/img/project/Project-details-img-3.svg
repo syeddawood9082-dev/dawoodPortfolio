@@ -1,0 +1,100 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1290 650" fill="none">
+  <defs>
+    <linearGradient id="pd3-bg" x1="0" y1="0" x2="0.5" y2="1">
+      <stop offset="0%" stop-color="#0f1118"/>
+      <stop offset="100%" stop-color="#141a28"/>
+    </linearGradient>
+    <linearGradient id="pd3-flow" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#10b981" stop-opacity="0.20"/>
+      <stop offset="100%" stop-color="#0d9488" stop-opacity="0.10"/>
+    </linearGradient>
+    <!-- Arrow marker -->
+    <marker id="pd3-arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-auto">
+      <path d="M0,2 L8,5 L0,8" fill="none" stroke="#10b981" stroke-width="1" opacity="0.30"/>
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1290" height="650" fill="url(#pd3-bg)"/>
+
+  <!-- === LEFT: Source Shapes === -->
+  <g transform="translate(200, 325)">
+    <!-- Source 1: cylinder/database -->
+    <ellipse cx="0" cy="-80" rx="40" ry="14" stroke="#10b981" stroke-width="1.5" fill="none" opacity="0.25"/>
+    <line x1="-40" y1="-80" x2="-40" y2="-50" stroke="#10b981" stroke-width="1.5" opacity="0.25"/>
+    <line x1="40" y1="-80" x2="40" y2="-50" stroke="#10b981" stroke-width="1.5" opacity="0.25"/>
+    <ellipse cx="0" cy="-50" rx="40" ry="14" stroke="#10b981" stroke-width="1.5" fill="none" opacity="0.25"/>
+
+    <!-- Source 2: document -->
+    <rect x="-30" y="10" width="60" height="75" rx="4" stroke="#0d9488" stroke-width="1.5" fill="none" opacity="0.25"/>
+    <line x1="-18" y1="30" x2="18" y2="30" stroke="#0d9488" stroke-width="0.8" opacity="0.15"/>
+    <line x1="-18" y1="42" x2="18" y2="42" stroke="#0d9488" stroke-width="0.8" opacity="0.15"/>
+    <line x1="-18" y1="54" x2="12" y2="54" stroke="#0d9488" stroke-width="0.8" opacity="0.15"/>
+    <line x1="-18" y1="66" x2="18" y2="66" stroke="#0d9488" stroke-width="0.8" opacity="0.15"/>
+
+    <!-- Source glow -->
+    <circle cx="0" cy="-20" r="80" fill="#10b981" opacity="0.02"/>
+  </g>
+
+  <!-- === Flowing lines from sources to processing === -->
+  <path d="M260,260 C350,250 400,280 480,310" stroke="url(#pd3-flow)" stroke-width="1.2" fill="none" marker-end="url(#pd3-arrow)"/>
+  <path d="M260,380 C350,390 400,360 480,340" stroke="url(#pd3-flow)" stroke-width="1.2" fill="none" marker-end="url(#pd3-arrow)"/>
+
+  <!-- Small flow particles -->
+  <circle cx="320" cy="260" r="1.5" fill="#10b981" opacity="0.12"/>
+  <circle cx="380" cy="280" r="1.2" fill="#10b981" opacity="0.10"/>
+  <circle cx="440" cy="305" r="1.5" fill="#10b981" opacity="0.08"/>
+  <circle cx="330" cy="385" r="1.5" fill="#10b981" opacity="0.12"/>
+  <circle cx="400" cy="370" r="1.2" fill="#10b981" opacity="0.10"/>
+
+  <!-- === CENTER: Processing Box === -->
+  <g transform="translate(645, 325)">
+    <rect x="-140" y="-90" width="280" height="180" rx="10" stroke="#10b981" stroke-width="1.5" fill="none" opacity="0.20"/>
+    <rect x="-140" y="-90" width="280" height="180" rx="10" fill="#10b981" opacity="0.02"/>
+
+    <!-- Internal processing elements: gears/transform -->
+    <circle cx="-40" cy="-20" r="25" stroke="#0d9488" stroke-width="1" fill="none" opacity="0.15"/>
+    <circle cx="-40" cy="-20" r="12" stroke="#0d9488" stroke-width="0.8" fill="none" opacity="0.10"/>
+
+    <circle cx="40" cy="10" r="25" stroke="#10b981" stroke-width="1" fill="none" opacity="0.15"/>
+    <circle cx="40" cy="10" r="12" stroke="#10b981" stroke-width="0.8" fill="none" opacity="0.10"/>
+
+    <!-- Mesh/interlocking suggestion -->
+    <line x1="-15" y1="-12" x2="15" y2="2" stroke="#10b981" stroke-width="0.5" opacity="0.10"/>
+    <line x1="-15" y1="-28" x2="15" y2="-5" stroke="#0d9488" stroke-width="0.5" opacity="0.08"/>
+
+    <!-- Processing indicators -->
+    <circle cx="-100" cy="50" r="4" stroke="#10b981" stroke-width="0.8" fill="none" opacity="0.15"/>
+    <circle cx="-80" cy="50" r="4" stroke="#10b981" stroke-width="0.8" fill="#10b981" fill-opacity="0.08" opacity="0.15"/>
+    <circle cx="-60" cy="50" r="4" stroke="#10b981" stroke-width="0.8" fill="none" opacity="0.15"/>
+  </g>
+
+  <!-- === Flowing lines from processing to output === -->
+  <path d="M810,300 C880,280 940,260 1020,250" stroke="url(#pd3-flow)" stroke-width="1.2" fill="none" marker-end="url(#pd3-arrow)"/>
+  <path d="M810,325 C880,325 940,325 1020,325" stroke="url(#pd3-flow)" stroke-width="1.2" fill="none" marker-end="url(#pd3-arrow)"/>
+  <path d="M810,350 C880,370 940,390 1020,400" stroke="url(#pd3-flow)" stroke-width="1.2" fill="none" marker-end="url(#pd3-arrow)"/>
+
+  <!-- Flow particles -->
+  <circle cx="870" cy="285" r="1.5" fill="#10b981" opacity="0.12"/>
+  <circle cx="950" cy="265" r="1.2" fill="#10b981" opacity="0.10"/>
+  <circle cx="880" cy="325" r="1.5" fill="#10b981" opacity="0.08"/>
+  <circle cx="870" cy="365" r="1.5" fill="#10b981" opacity="0.12"/>
+  <circle cx="960" cy="392" r="1.2" fill="#10b981" opacity="0.10"/>
+
+  <!-- === RIGHT: Output Shapes === -->
+  <g transform="translate(1090, 325)">
+    <!-- Output 1: structured rectangle/chart -->
+    <rect x="-40" y="-100" width="80" height="60" rx="6" stroke="#10b981" stroke-width="1.5" fill="none" opacity="0.25"/>
+    <!-- Bar chart inside -->
+    <rect x="-25" y="-80" width="10" height="30" rx="1" stroke="#0d9488" stroke-width="0.8" fill="none" opacity="0.15"/>
+    <rect x="-10" y="-90" width="10" height="40" rx="1" stroke="#0d9488" stroke-width="0.8" fill="none" opacity="0.15"/>
+    <rect x="5" y="-75" width="10" height="25" rx="1" stroke="#0d9488" stroke-width="0.8" fill="none" opacity="0.15"/>
+    <rect x="20" y="-85" width="10" height="35" rx="1" stroke="#0d9488" stroke-width="0.8" fill="none" opacity="0.15"/>
+
+    <!-- Output 2: diamond/insight -->
+    <polygon points="0,50 30,80 0,110 -30,80" stroke="#10b981" stroke-width="1.5" fill="none" opacity="0.25" stroke-linejoin="round"/>
+
+    <!-- Output glow -->
+    <circle cx="0" cy="0" r="80" fill="#10b981" opacity="0.02"/>
+  </g>
+</svg>

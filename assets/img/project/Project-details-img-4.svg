@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 200" fill="none">
+  <defs>
+    <linearGradient id="pd4-bg" x1="0" y1="0" x2="0.5" y2="1">
+      <stop offset="0%" stop-color="#111118"/>
+      <stop offset="100%" stop-color="#181828"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="300" height="200" fill="url(#pd4-bg)"/>
+
+  <!-- Cloud outline, centered, ~80px wide -->
+  <g transform="translate(150, 95)">
+    <path d="M-38,-8 C-38,-22 -24,-28 -14,-26 C-10,-34 6,-34 14,-28 C20,-32 34,-24 34,-14 C40,-10 40,-2 36,2 C38,10 30,16 22,14 C16,20 -4,22 -12,16 C-20,20 -36,14 -36,4 C-40,0 -42,-4 -38,-8 Z"
+          stroke="#06b6d4" stroke-width="1.5" fill="none" opacity="0.40" stroke-linejoin="round"/>
+    <!-- Small inner cloud suggestion -->
+    <circle cx="0" cy="-4" r="3" stroke="#06b6d4" stroke-width="0.8" fill="none" opacity="0.20"/>
+  </g>
+</svg>

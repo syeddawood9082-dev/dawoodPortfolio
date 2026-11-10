@@ -1,0 +1,100 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600">
+  <defs>
+    <linearGradient id="bg6" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1a2e"/>
+      <stop offset="100%" style="stop-color:#2c2c54"/>
+    </linearGradient>
+    <linearGradient id="gold6" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f39c12;stop-opacity:0.7"/>
+      <stop offset="100%" style="stop-color:#e67e22;stop-opacity:0.4"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="600" rx="12" fill="url(#bg6)"/>
+
+  <!-- Subtle radiating lines pattern -->
+  <g opacity="0.04" stroke="#f39c12" stroke-width="0.5">
+    <line x1="400" y1="250" x2="100" y2="50"/>
+    <line x1="400" y1="250" x2="200" y2="30"/>
+    <line x1="400" y1="250" x2="300" y2="20"/>
+    <line x1="400" y1="250" x2="500" y2="20"/>
+    <line x1="400" y1="250" x2="600" y2="30"/>
+    <line x1="400" y1="250" x2="700" y2="50"/>
+    <line x1="400" y1="250" x2="100" y2="450"/>
+    <line x1="400" y1="250" x2="700" y2="450"/>
+  </g>
+
+  <!-- Handshake icon -->
+  <g transform="translate(400, 220)" opacity="0.85">
+    <!-- Left hand -->
+    <path d="M-80,10 L-60,-20 Q-50,-30 -40,-20 L-10,10 Q0,20 10,10 L20,0" fill="none" stroke="#f39c12" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    <!-- Right hand -->
+    <path d="M80,10 L60,-20 Q50,-30 40,-20 L10,10 Q0,20 -10,10 L-20,0" fill="none" stroke="#f39c12" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    <!-- Grip area -->
+    <ellipse cx="0" cy="5" rx="25" ry="15" fill="#f39c12" opacity="0.1" stroke="#f39c12" stroke-width="1" stroke-opacity="0.3"/>
+    <!-- Cuff left -->
+    <rect x="-95" y="10" width="40" height="30" rx="4" fill="none" stroke="#f39c12" stroke-width="2" opacity="0.5"/>
+    <!-- Cuff right -->
+    <rect x="55" y="10" width="40" height="30" rx="4" fill="none" stroke="#f39c12" stroke-width="2" opacity="0.5"/>
+  </g>
+
+  <!-- Connection network around handshake -->
+  <g opacity="0.15">
+    <!-- Network nodes -->
+    <circle cx="250" cy="140" r="8" fill="#f39c12"/>
+    <circle cx="550" cy="140" r="8" fill="#f39c12"/>
+    <circle cx="200" cy="280" r="6" fill="#f39c12"/>
+    <circle cx="600" cy="280" r="6" fill="#f39c12"/>
+    <circle cx="300" cy="100" r="5" fill="#f39c12"/>
+    <circle cx="500" cy="100" r="5" fill="#f39c12"/>
+    <circle cx="160" cy="200" r="4" fill="#f39c12"/>
+    <circle cx="640" cy="200" r="4" fill="#f39c12"/>
+
+    <!-- Connection lines -->
+    <line x1="250" y1="140" x2="300" y2="100" stroke="#f39c12" stroke-width="1"/>
+    <line x1="550" y1="140" x2="500" y2="100" stroke="#f39c12" stroke-width="1"/>
+    <line x1="300" y1="100" x2="500" y2="100" stroke="#f39c12" stroke-width="1"/>
+    <line x1="250" y1="140" x2="160" y2="200" stroke="#f39c12" stroke-width="1"/>
+    <line x1="550" y1="140" x2="640" y2="200" stroke="#f39c12" stroke-width="1"/>
+    <line x1="160" y1="200" x2="200" y2="280" stroke="#f39c12" stroke-width="1"/>
+    <line x1="640" y1="200" x2="600" y2="280" stroke="#f39c12" stroke-width="1"/>
+    <line x1="250" y1="140" x2="400" y2="200" stroke="#f39c12" stroke-width="1"/>
+    <line x1="550" y1="140" x2="400" y2="200" stroke="#f39c12" stroke-width="1"/>
+  </g>
+
+  <!-- Growth arrows -->
+  <g opacity="0.15" fill="#f39c12">
+    <polygon points="685,160 695,140 705,160 700,160 700,190 690,190 690,160"/>
+    <polygon points="715,170 725,150 735,170 730,170 730,200 720,200 720,170"/>
+  </g>
+
+  <!-- Partnership metrics -->
+  <g transform="translate(400, 310)">
+    <rect x="-200" y="0" width="120" height="50" rx="6" fill="#1a1a2e" opacity="0.8" stroke="#f39c12" stroke-width="0.5" stroke-opacity="0.3"/>
+    <text x="-140" y="22" font-family="'Segoe UI', system-ui, sans-serif" font-size="10" fill="#a0845c" text-anchor="middle" letter-spacing="1">PARTNERSHIPS</text>
+    <text x="-140" y="42" font-family="'Segoe UI', system-ui, sans-serif" font-size="18" font-weight="700" fill="#f39c12" text-anchor="middle">12+</text>
+
+    <rect x="-60" y="0" width="120" height="50" rx="6" fill="#1a1a2e" opacity="0.8" stroke="#f39c12" stroke-width="0.5" stroke-opacity="0.3"/>
+    <text x="0" y="22" font-family="'Segoe UI', system-ui, sans-serif" font-size="10" fill="#a0845c" text-anchor="middle" letter-spacing="1">PROJECTS</text>
+    <text x="0" y="42" font-family="'Segoe UI', system-ui, sans-serif" font-size="18" font-weight="700" fill="#f39c12" text-anchor="middle">25+</text>
+
+    <rect x="80" y="0" width="120" height="50" rx="6" fill="#1a1a2e" opacity="0.8" stroke="#f39c12" stroke-width="0.5" stroke-opacity="0.3"/>
+    <text x="140" y="22" font-family="'Segoe UI', system-ui, sans-serif" font-size="10" fill="#a0845c" text-anchor="middle" letter-spacing="1">CLIENTS</text>
+    <text x="140" y="42" font-family="'Segoe UI', system-ui, sans-serif" font-size="18" font-weight="700" fill="#f39c12" text-anchor="middle">8+</text>
+  </g>
+
+  <!-- Decorative corners -->
+  <rect x="30" y="30" width="60" height="2" rx="1" fill="#f39c12" opacity="0.3"/>
+  <rect x="30" y="30" width="2" height="60" rx="1" fill="#f39c12" opacity="0.3"/>
+  <rect x="710" y="538" width="60" height="2" rx="1" fill="#f39c12" opacity="0.3"/>
+  <rect x="768" y="480" width="2" height="60" rx="1" fill="#f39c12" opacity="0.3"/>
+
+  <!-- Title -->
+  <text x="400" y="440" font-family="'Segoe UI', system-ui, -apple-system, sans-serif" font-size="34" font-weight="700" fill="#ffffff" text-anchor="middle" letter-spacing="1">Strategic Partnerships</text>
+  <text x="400" y="475" font-family="'Segoe UI', system-ui, -apple-system, sans-serif" font-size="16" font-weight="400" fill="#fbbf24" text-anchor="middle" letter-spacing="2">PROJECT ACQUISITION</text>
+
+  <!-- Category pill -->
+  <rect x="330" y="492" width="140" height="30" rx="15" fill="#f39c12" opacity="0.15" stroke="#f39c12" stroke-width="1" stroke-opacity="0.3"/>
+  <text x="400" y="512" font-family="'Segoe UI', system-ui, -apple-system, sans-serif" font-size="12" font-weight="600" fill="#fbbf24" text-anchor="middle" letter-spacing="1.5">AARK CONNECT</text>
+</svg>
