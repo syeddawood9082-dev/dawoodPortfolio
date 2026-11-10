@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 740 450" fill="none">
+  <defs>
+    <linearGradient id="sd2-bg" x1="0" y1="0" x2="0.5" y2="1">
+      <stop offset="0%" stop-color="#111118"/>
+      <stop offset="100%" stop-color="#1a1a28"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="740" height="450" fill="url(#sd2-bg)"/>
+
+  <!-- === 4 Process Circles in horizontal row === -->
+
+  <!-- Circle 1: Violet -->
+  <g transform="translate(150, 200)">
+    <circle cx="0" cy="0" r="40" stroke="#8b5cf6" stroke-width="1.5" fill="none" opacity="0.30"/>
+    <circle cx="0" cy="0" r="40" fill="#8b5cf6" opacity="0.03"/>
+    <!-- Label line below -->
+    <line x1="-20" y1="55" x2="20" y2="55" stroke="#8b5cf6" stroke-width="1.5" opacity="0.20"/>
+  </g>
+
+  <!-- Arrow 1->2 -->
+  <g opacity="0.20">
+    <line x1="195" y1="200" x2="248" y2="200" stroke="#ffffff" stroke-width="1"/>
+    <polyline points="244,196 252,200 244,204" stroke="#ffffff" stroke-width="1" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <!-- Circle 2: Cyan -->
+  <g transform="translate(300, 200)">
+    <circle cx="0" cy="0" r="40" stroke="#06b6d4" stroke-width="1.5" fill="none" opacity="0.30"/>
+    <circle cx="0" cy="0" r="40" fill="#06b6d4" opacity="0.03"/>
+    <!-- Label line below -->
+    <line x1="-20" y1="55" x2="20" y2="55" stroke="#06b6d4" stroke-width="1.5" opacity="0.20"/>
+  </g>
+
+  <!-- Arrow 2->3 -->
+  <g opacity="0.20">
+    <line x1="345" y1="200" x2="398" y2="200" stroke="#ffffff" stroke-width="1"/>
+    <polyline points="394,196 402,200 394,204" stroke="#ffffff" stroke-width="1" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <!-- Circle 3: Emerald -->
+  <g transform="translate(450, 200)">
+    <circle cx="0" cy="0" r="40" stroke="#10b981" stroke-width="1.5" fill="none" opacity="0.30"/>
+    <circle cx="0" cy="0" r="40" fill="#10b981" opacity="0.03"/>
+    <!-- Label line below -->
+    <line x1="-20" y1="55" x2="20" y2="55" stroke="#10b981" stroke-width="1.5" opacity="0.20"/>
+  </g>
+
+  <!-- Arrow 3->4 -->
+  <g opacity="0.20">
+    <line x1="495" y1="200" x2="548" y2="200" stroke="#ffffff" stroke-width="1"/>
+    <polyline points="544,196 552,200 544,204" stroke="#ffffff" stroke-width="1" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <!-- Circle 4: Amber -->
+  <g transform="translate(600, 200)">
+    <circle cx="0" cy="0" r="40" stroke="#f59e0b" stroke-width="1.5" fill="none" opacity="0.30"/>
+    <circle cx="0" cy="0" r="40" fill="#f59e0b" opacity="0.03"/>
+    <!-- Label line below -->
+    <line x1="-20" y1="55" x2="20" y2="55" stroke="#f59e0b" stroke-width="1.5" opacity="0.20"/>
+  </g>
+
+  <!-- Dotted arc from last circle back to first (iteration) -->
+  <path d="M595,245 C580,340 420,370 300,370 C180,370 160,340 155,245"
+        stroke="#ffffff" stroke-width="0.8" fill="none" opacity="0.08"
+        stroke-dasharray="4 4"/>
+  <!-- Small arrow at the end of the arc -->
+  <polyline points="151,250 155,240 159,250" stroke="#ffffff" stroke-width="0.8" fill="none" opacity="0.08" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

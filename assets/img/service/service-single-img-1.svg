@@ -1,0 +1,112 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 800" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <!-- Base gradient -->
+    <linearGradient id="s1-base" x1="0" y1="0" x2="0.5" y2="1">
+      <stop offset="0%" stop-color="#0c0c14"/>
+      <stop offset="35%" stop-color="#10101c"/>
+      <stop offset="70%" stop-color="#141421"/>
+      <stop offset="100%" stop-color="#161625"/>
+    </linearGradient>
+    <linearGradient id="s1-overlay" x1="1" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#161625" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#0c0c14" stop-opacity="0.3"/>
+    </linearGradient>
+    <!-- Gradient wave ribbon: purple to blue -->
+    <linearGradient id="s1-ribbon" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#7c3aed" stop-opacity="0.1"/>
+      <stop offset="30%" stop-color="#6d28d9" stop-opacity="0.08"/>
+      <stop offset="60%" stop-color="#4f46e5" stop-opacity="0.09"/>
+      <stop offset="100%" stop-color="#3b82f6" stop-opacity="0.1"/>
+    </linearGradient>
+    <!-- Geometric shape gradients -->
+    <radialGradient id="s1-hex1" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#7c3aed" stop-opacity="0.05"/>
+      <stop offset="100%" stop-color="#7c3aed" stop-opacity="0.01"/>
+    </radialGradient>
+    <radialGradient id="s1-hex2" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#3b82f6" stop-opacity="0.04"/>
+      <stop offset="100%" stop-color="#3b82f6" stop-opacity="0.008"/>
+    </radialGradient>
+    <radialGradient id="s1-circle1" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#8b5cf6" stop-opacity="0.06"/>
+      <stop offset="100%" stop-color="#8b5cf6" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="s1-circle2" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#60a5fa" stop-opacity="0.04"/>
+      <stop offset="100%" stop-color="#60a5fa" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="s1-circle3" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#a78bfa" stop-opacity="0.035"/>
+      <stop offset="100%" stop-color="#a78bfa" stop-opacity="0"/>
+    </radialGradient>
+    <!-- Ambient glow -->
+    <radialGradient id="s1-glow" cx="50%" cy="45%" r="40%">
+      <stop offset="0%" stop-color="#6d28d9" stop-opacity="0.04"/>
+      <stop offset="50%" stop-color="#4c1d95" stop-opacity="0.02"/>
+      <stop offset="100%" stop-color="#6d28d9" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Base -->
+  <rect width="1920" height="800" fill="url(#s1-base)"/>
+  <rect width="1920" height="800" fill="url(#s1-overlay)"/>
+  <rect width="1920" height="800" fill="url(#s1-glow)"/>
+
+  <!-- Large overlapping translucent hexagons -->
+  <polygon points="400,200 520,130 640,200 640,340 520,410 400,340" fill="url(#s1-hex1)" stroke="#7c3aed" stroke-opacity="0.03" stroke-width="0.8"/>
+  <polygon points="1300,150 1430,75 1560,150 1560,300 1430,375 1300,300" fill="url(#s1-hex2)" stroke="#3b82f6" stroke-opacity="0.025" stroke-width="0.7"/>
+  <polygon points="850,400 950,345 1050,400 1050,510 950,565 850,510" fill="url(#s1-hex1)" stroke="#8b5cf6" stroke-opacity="0.025" stroke-width="0.6"/>
+  <polygon points="150,450 240,400 330,450 330,540 240,590 150,540" fill="url(#s1-hex2)" stroke="#6366f1" stroke-opacity="0.02" stroke-width="0.5"/>
+  <polygon points="1600,450 1700,395 1800,450 1800,560 1700,615 1600,560" fill="url(#s1-hex1)" stroke="#7c3aed" stroke-opacity="0.02" stroke-width="0.5"/>
+
+  <!-- Large overlapping translucent circles -->
+  <circle cx="700" cy="350" r="220" fill="url(#s1-circle1)"/>
+  <circle cx="1200" cy="300" r="280" fill="url(#s1-circle2)"/>
+  <circle cx="350" cy="500" r="180" fill="url(#s1-circle3)"/>
+  <circle cx="1600" cy="250" r="200" fill="url(#s1-circle1)"/>
+  <circle cx="960" cy="600" r="250" fill="url(#s1-circle2)"/>
+
+  <!-- Flowing gradient wave/ribbon across center -->
+  <path d="M0,420 C200,350 400,380 600,360 C800,340 1000,400 1200,370 C1400,340 1600,390 1920,350 L1920,430 C1600,470 1400,420 1200,450 C1000,480 800,420 600,440 C400,460 200,430 0,500 Z" fill="url(#s1-ribbon)"/>
+  <!-- Secondary thinner ribbon -->
+  <path d="M0,380 C300,330 600,370 900,340 C1200,310 1500,360 1920,320 L1920,345 C1500,385 1200,335 900,365 C600,395 300,355 0,405 Z" fill="url(#s1-ribbon)" opacity="0.5"/>
+
+  <!-- Circuit board-style thin lines and nodes -->
+  <!-- Horizontal lines -->
+  <line x1="100" y1="200" x2="350" y2="200" stroke="#52525b" stroke-opacity="0.04" stroke-width="0.5"/>
+  <line x1="350" y1="200" x2="350" y2="320" stroke="#52525b" stroke-opacity="0.04" stroke-width="0.5"/>
+  <line x1="350" y1="320" x2="550" y2="320" stroke="#52525b" stroke-opacity="0.04" stroke-width="0.5"/>
+
+  <line x1="1400" y1="180" x2="1650" y2="180" stroke="#52525b" stroke-opacity="0.04" stroke-width="0.5"/>
+  <line x1="1650" y1="180" x2="1650" y2="280" stroke="#52525b" stroke-opacity="0.04" stroke-width="0.5"/>
+  <line x1="1650" y1="280" x2="1850" y2="280" stroke="#52525b" stroke-opacity="0.04" stroke-width="0.5"/>
+
+  <line x1="200" y1="550" x2="450" y2="550" stroke="#52525b" stroke-opacity="0.035" stroke-width="0.5"/>
+  <line x1="450" y1="550" x2="450" y2="650" stroke="#52525b" stroke-opacity="0.035" stroke-width="0.5"/>
+  <line x1="450" y1="650" x2="700" y2="650" stroke="#52525b" stroke-opacity="0.035" stroke-width="0.5"/>
+
+  <line x1="1200" y1="580" x2="1500" y2="580" stroke="#52525b" stroke-opacity="0.035" stroke-width="0.5"/>
+  <line x1="1500" y1="580" x2="1500" y2="680" stroke="#52525b" stroke-opacity="0.035" stroke-width="0.5"/>
+  <line x1="1500" y1="680" x2="1750" y2="680" stroke="#52525b" stroke-opacity="0.035" stroke-width="0.5"/>
+
+  <!-- Diagonal circuit paths -->
+  <line x1="700" y1="100" x2="850" y2="200" stroke="#52525b" stroke-opacity="0.03" stroke-width="0.4"/>
+  <line x1="850" y1="200" x2="1050" y2="200" stroke="#52525b" stroke-opacity="0.03" stroke-width="0.4"/>
+  <line x1="1050" y1="200" x2="1150" y2="130" stroke="#52525b" stroke-opacity="0.03" stroke-width="0.4"/>
+
+  <!-- Circuit nodes (small squares and circles) -->
+  <rect x="347" y="197" width="6" height="6" rx="1" fill="#71717a" fill-opacity="0.06"/>
+  <rect x="547" y="317" width="6" height="6" rx="1" fill="#71717a" fill-opacity="0.06"/>
+  <rect x="1647" y="177" width="6" height="6" rx="1" fill="#71717a" fill-opacity="0.06"/>
+  <rect x="1847" y="277" width="6" height="6" rx="1" fill="#71717a" fill-opacity="0.06"/>
+  <circle cx="100" cy="200" r="2" fill="#71717a" fill-opacity="0.06"/>
+  <circle cx="1400" cy="180" r="2" fill="#71717a" fill-opacity="0.06"/>
+  <rect x="447" y="547" width="6" height="6" rx="1" fill="#71717a" fill-opacity="0.05"/>
+  <rect x="697" y="647" width="6" height="6" rx="1" fill="#71717a" fill-opacity="0.05"/>
+  <circle cx="200" cy="550" r="2" fill="#71717a" fill-opacity="0.05"/>
+  <rect x="1497" y="577" width="6" height="6" rx="1" fill="#71717a" fill-opacity="0.05"/>
+  <rect x="1747" y="677" width="6" height="6" rx="1" fill="#71717a" fill-opacity="0.05"/>
+  <circle cx="1200" cy="580" r="2" fill="#71717a" fill-opacity="0.05"/>
+  <circle cx="850" cy="200" r="2.5" fill="#71717a" fill-opacity="0.04"/>
+  <circle cx="1050" cy="200" r="2.5" fill="#71717a" fill-opacity="0.04"/>
+</svg>

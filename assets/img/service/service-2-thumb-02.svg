@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 280" width="520" height="280">
+  <defs>
+    <radialGradient id="glow02" cx="50%" cy="50%" r="35%">
+      <stop offset="0%" style="stop-color:#06b6d4;stop-opacity:0.08"/>
+      <stop offset="100%" style="stop-color:#06b6d4;stop-opacity:0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="520" height="280" rx="8" fill="#18181b"/>
+
+  <!-- Subtle radial glow behind icon -->
+  <circle cx="260" cy="140" r="80" fill="url(#glow02)"/>
+
+  <!-- Cloud with lock icon -->
+  <g transform="translate(260, 136)" fill="none" stroke="#06b6d4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+    <!-- Cloud shape -->
+    <path d="M-24,6 C-28,6 -32,2 -32,-3 C-32,-8 -28,-12 -24,-12 C-23,-18 -16,-22 -8,-22 C-2,-22 4,-19 6,-15 C8,-17 12,-18 16,-16 C20,-14 22,-10 22,-6 C26,-5 28,-2 28,2 C28,6 26,8 22,8"/>
+    <!-- Lock body -->
+    <rect x="-6" y="6" width="12" height="10" rx="1.5"/>
+    <!-- Lock shackle -->
+    <path d="M-3,6 L-3,2 C-3,-2 0,-5 3,-5 C6,-5 9,-2 9,2 L9,6" fill="none"/>
+    <!-- Keyhole -->
+    <circle cx="3" cy="11" r="1.5" fill="none"/>
+  </g>
+</svg>

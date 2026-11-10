@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 280" width="520" height="280">
+  <defs>
+    <radialGradient id="glow05" cx="50%" cy="50%" r="35%">
+      <stop offset="0%" style="stop-color:#f59e0b;stop-opacity:0.08"/>
+      <stop offset="100%" style="stop-color:#f59e0b;stop-opacity:0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="520" height="280" rx="8" fill="#18181b"/>
+
+  <!-- Subtle radial glow behind icon -->
+  <circle cx="260" cy="140" r="80" fill="url(#glow05)"/>
+
+  <!-- Database cylinder icon -->
+  <g transform="translate(260, 140)" fill="none" stroke="#f59e0b" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+    <!-- Top ellipse -->
+    <ellipse cx="0" cy="-18" rx="18" ry="7"/>
+    <!-- Bottom ellipse -->
+    <ellipse cx="0" cy="18" rx="18" ry="7"/>
+    <!-- Left side -->
+    <line x1="-18" y1="-18" x2="-18" y2="18"/>
+    <!-- Right side -->
+    <line x1="18" y1="-18" x2="18" y2="18"/>
+    <!-- Middle partition lines -->
+    <path d="M-18,-4 C-18,1 -10,5 0,5 C10,5 18,1 18,-4" opacity="0.5"/>
+    <path d="M-18,8 C-18,13 -10,17 0,17 C10,17 18,13 18,8" opacity="0.35"/>
+  </g>
+</svg>

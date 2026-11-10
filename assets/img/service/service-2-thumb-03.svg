@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 280" width="520" height="280">
+  <defs>
+    <radialGradient id="glow03" cx="50%" cy="50%" r="35%">
+      <stop offset="0%" style="stop-color:#10b981;stop-opacity:0.08"/>
+      <stop offset="100%" style="stop-color:#10b981;stop-opacity:0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="520" height="280" rx="8" fill="#18181b"/>
+
+  <!-- Subtle radial glow behind icon -->
+  <circle cx="260" cy="140" r="80" fill="url(#glow03)"/>
+
+  <!-- Document/file with lines icon -->
+  <g transform="translate(260, 140)" fill="none" stroke="#10b981" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+    <!-- Document outline with folded corner -->
+    <path d="M-14,-24 L8,-24 L18,-14 L18,24 L-14,24 Z"/>
+    <!-- Folded corner -->
+    <path d="M8,-24 L8,-14 L18,-14"/>
+    <!-- Text lines -->
+    <line x1="-6" y1="-8" x2="10" y2="-8"/>
+    <line x1="-6" y1="0" x2="10" y2="0"/>
+    <line x1="-6" y1="8" x2="4" y2="8"/>
+  </g>
+</svg>

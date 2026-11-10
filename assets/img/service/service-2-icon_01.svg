@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" fill="none" stroke="#0F0F0F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+  <!-- AI/ML Brain / Neural Network Icon -->
+  <path d="M32 12c-4 0-7.5 2-9 5-2-1-4.5-0.5-6 1.5s-1.5 4.5 0 6c-2 1.5-3 4-2.5 6.5s3 4.5 5.5 5c0 2.5 1.5 5 4 6s5.5 0.5 7.5-1"/>
+  <path d="M32 12c4 0 7.5 2 9 5 2-1 4.5-0.5 6 1.5s1.5 4.5 0 6c2 1.5 3 4 2.5 6.5s-3 4.5-5.5 5c0 2.5-1.5 5-4 6s-5.5 0.5-7.5-1"/>
+  <circle cx="32" cy="22" r="2.5"/>
+  <circle cx="25" cy="30" r="2.5"/>
+  <circle cx="39" cy="30" r="2.5"/>
+  <circle cx="28" cy="40" r="2.5"/>
+  <circle cx="36" cy="40" r="2.5"/>
+  <circle cx="32" cy="50" r="2.5"/>
+  <line x1="32" y1="24.5" x2="25" y2="27.5"/>
+  <line x1="32" y1="24.5" x2="39" y2="27.5"/>
+  <line x1="25" y1="32.5" x2="28" y2="37.5"/>
+  <line x1="39" y1="32.5" x2="36" y2="37.5"/>
+  <line x1="25" y1="32.5" x2="36" y2="37.5"/>
+  <line x1="39" y1="32.5" x2="28" y2="37.5"/>
+  <line x1="28" y1="42.5" x2="32" y2="47.5"/>
+  <line x1="36" y1="42.5" x2="32" y2="47.5"/>
+</svg>
