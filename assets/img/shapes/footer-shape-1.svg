@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 868 437" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <!-- Main organic shape gradient -->
+    <radialGradient id="fs1-main" cx="60%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#2e1065" stop-opacity="0.15"/>
+      <stop offset="35%" stop-color="#2e1065" stop-opacity="0.1"/>
+      <stop offset="65%" stop-color="#1e0a4a" stop-opacity="0.05"/>
+      <stop offset="100%" stop-color="#2e1065" stop-opacity="0"/>
+    </radialGradient>
+    <!-- Secondary inner glow -->
+    <radialGradient id="fs1-inner" cx="55%" cy="45%" r="40%">
+      <stop offset="0%" stop-color="#4c1d95" stop-opacity="0.08"/>
+      <stop offset="100%" stop-color="#4c1d95" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Large organic curved shape -->
+  <path d="M200,437 C180,350 220,280 300,220 C380,160 480,130 580,120 C680,110 780,140 840,180 C868,200 868,250 868,300 L868,437 Z" fill="url(#fs1-main)"/>
+
+  <!-- Secondary softer organic layer -->
+  <path d="M350,437 C340,370 380,310 450,260 C520,210 620,190 720,185 C800,182 850,210 868,240 L868,437 Z" fill="url(#fs1-inner)"/>
+
+  <!-- Subtle concentric arcs -->
+  <path d="M868,350 C750,320 650,290 580,240" stroke="#7c3aed" stroke-opacity="0.03" stroke-width="0.8" fill="none"/>
+  <path d="M868,300 C720,275 620,240 550,190" stroke="#6d28d9" stroke-opacity="0.025" stroke-width="0.6" fill="none"/>
+  <path d="M868,250 C700,230 600,200 530,150" stroke="#5b21b6" stroke-opacity="0.02" stroke-width="0.5" fill="none"/>
+  <path d="M868,400 C780,370 680,340 610,290" stroke="#7c3aed" stroke-opacity="0.025" stroke-width="0.7" fill="none"/>
+
+  <!-- Very faint circular arc accents -->
+  <circle cx="700" cy="350" r="120" stroke="#4c1d95" stroke-opacity="0.02" stroke-width="0.5" fill="none"/>
+  <circle cx="700" cy="350" r="180" stroke="#3b0764" stroke-opacity="0.015" stroke-width="0.4" fill="none"/>
+  <circle cx="700" cy="350" r="250" stroke="#2e1065" stroke-opacity="0.01" stroke-width="0.3" fill="none"/>
+</svg>

@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 985" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <!-- Subtle gradient for the wave fill -->
+    <linearGradient id="ls3-wave" x1="0" y1="0.4" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0a0a0f" stop-opacity="0"/>
+      <stop offset="30%" stop-color="#0a0a0f" stop-opacity="0.04"/>
+      <stop offset="60%" stop-color="#0a0a0f" stop-opacity="0.1"/>
+      <stop offset="100%" stop-color="#0a0a0f" stop-opacity="0.15"/>
+    </linearGradient>
+    <!-- Secondary wave gradient -->
+    <linearGradient id="ls3-wave2" x1="0" y1="0.5" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0f0f18" stop-opacity="0"/>
+      <stop offset="40%" stop-color="#0f0f18" stop-opacity="0.03"/>
+      <stop offset="100%" stop-color="#0f0f18" stop-opacity="0.12"/>
+    </linearGradient>
+    <!-- Third layer -->
+    <linearGradient id="ls3-wave3" x1="0" y1="0.55" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0a0a12" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#0a0a12" stop-opacity="0.02"/>
+      <stop offset="100%" stop-color="#0a0a12" stop-opacity="0.08"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Large flowing organic wave - primary (fills bottom 60%) -->
+  <path d="M0,400 C160,380 320,420 480,390 C640,360 800,410 960,395 C1120,380 1280,430 1440,400 C1600,370 1760,415 1920,385 L1920,985 L0,985 Z" fill="url(#ls3-wave)"/>
+
+  <!-- Secondary wave layer - slightly offset -->
+  <path d="M0,450 C200,430 400,470 600,440 C800,410 1000,460 1200,435 C1400,410 1600,455 1920,425 L1920,985 L0,985 Z" fill="url(#ls3-wave2)"/>
+
+  <!-- Third wave layer -->
+  <path d="M0,520 C250,500 500,540 750,510 C1000,480 1250,530 1500,505 C1700,485 1850,520 1920,500 L1920,985 L0,985 Z" fill="url(#ls3-wave3)"/>
+
+  <!-- Thin flowing lines creating a sense of flow -->
+  <path d="M0,380 C300,350 600,400 900,370 C1200,340 1500,390 1920,360" stroke="#a1a1aa" stroke-opacity="0.05" stroke-width="0.8" fill="none"/>
+  <path d="M0,500 C250,480 500,520 750,490 C1000,460 1250,510 1500,485 C1750,460 1850,500 1920,480" stroke="#71717a" stroke-opacity="0.04" stroke-width="0.6" fill="none"/>
+  <path d="M0,620 C320,600 640,640 960,610 C1280,580 1600,630 1920,600" stroke="#52525b" stroke-opacity="0.05" stroke-width="0.7" fill="none"/>
+</svg>
