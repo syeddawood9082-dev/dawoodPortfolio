@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1070" height="630" viewBox="0 0 1070 630">
+  <rect width="1070" height="630" fill="#14101f"/>
+  <g fill="none" stroke="#8a36ff" stroke-width="3">
+    <path d="M700 560 l150 -52 l150 52 l-150 52 z" opacity="0.4"/>
+    <path d="M700 505 l150 -52 l150 52 l-150 52 z" opacity="0.65"/>
+    <path d="M700 450 l150 -52 l150 52 l-150 52 z" opacity="0.9"/>
+  </g>
+  <circle cx="72" cy="78" r="7" fill="#8a36ff"/>
+  <text x="94" y="87" font-family="Helvetica, Arial, sans-serif" font-size="22" letter-spacing="5" fill="#cfc4e8">PRYSMIAN</text>
+  <text x="70" y="238" font-family="Helvetica, Arial, sans-serif" font-weight="700" font-size="66" fill="#ffffff">Enterprise Data Platform</text>
+  <text x="70" y="308" font-family="Helvetica, Arial, sans-serif" font-size="27" fill="#b7a8dd">Enterprise pipelines and the data behind reporting</text>
+  <text x="70" y="368" font-family="Helvetica, Arial, sans-serif" font-size="24" fill="#efeaff">SAP &#183; Snowflake &#183; SQL</text>
+</svg>
