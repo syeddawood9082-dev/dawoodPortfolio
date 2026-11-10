@@ -1,0 +1,318 @@
+@use "../utilities" as *;
+
+/**----------------------------------------
+START: Breadcrumb SCSS
+----------------------------------------*/
+
+.breadcrumb-section {
+    position: relative;
+    z-index: 1;
+
+    .shape-1 {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+
+        img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+
+    .breadcrumb-wrap {
+        position: relative;
+        padding-top: 190px;
+        padding-bottom: 97px;
+
+        @include breakpoint(md) {
+            padding-top: 125px;
+        }
+
+        @include breakpoint(sm) {
+            padding-top: 50px;
+            padding-bottom: 50px;
+        }
+
+        .breadcrumb-content {
+            max-width: 1570px;
+            width: 100%;
+            margin: 0 auto;
+            padding-left: 33px;
+
+            &-2 {
+                padding-left: 4px;
+            }
+
+            &-3 {
+                padding-left: 0;
+            }
+
+            .breadcrumb-list {
+                @include flex-vertical-center;
+                list-style: none;
+                margin-bottom: 20px;
+                flex-wrap: wrap;
+                row-gap: 10px;
+
+                li {
+                    background-color: var(--rr-color-common-white);
+                    font-size: 16px;
+                    font-weight: 400;
+                    text-transform: capitalize;
+                    padding: 5px 25px;
+                    border-radius: 100px;
+                    border: 1px solid rgba(15, 15, 15, 0.1);
+                    color: #0F0F0F;
+
+                    @include breakpoint(sm) {
+                        font-size: 14px;
+                    }
+
+                    &:not(:last-of-type) {
+                        margin-right: 20px;
+                    }
+                }
+            }
+
+            .breadcrumb-title-wrap {
+                position: relative;
+
+                .breadcrumb-title {
+                    font-family: 'Inter Tight';
+                    color: #0F0F0F;
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 175px;
+                    line-height: 190px;
+                    letter-spacing: -0.01em;
+                    text-transform: uppercase;
+
+                    @include breakpoint(xxl) {
+                        font-size: 150px;
+                    }
+
+                    @media only screen and (max-width: 1200px) {
+                        font-size: 128px;
+                    }
+
+                    @include breakpoint(xl) {
+                        font-size: 128px;
+                    }
+
+                    @include breakpoint(lg) {
+                        font-size: 105px;
+                    }
+
+                    @include breakpoint(md) {
+                        font-size: 78px;
+                        line-height: 120px;
+                    }
+
+                    @include breakpoint(sm) {
+                        font-size: 54px;
+                        line-height: 80px;
+                    }
+
+                    @media only screen and (max-width: 375px) {
+                        font-size: 31px;
+                        line-height: 60px;
+
+                        .title-border {
+                            border: 1px solid transparent !important;
+                            padding: 0 !important;
+                        }
+                    }
+
+                    .title-border {
+                        border: 1px solid #0F0F0F;
+                        border-radius: 95px;
+                        padding: 3px 50px;
+                    }
+
+                    &-2 {
+                        @include breakpoint(md) {
+                            font-size: 76px;
+                            line-height: 120px;
+                        }
+
+                        @include breakpoint(sm) {
+                            font-size: 54px;
+                            line-height: 80px;
+
+                            br {
+                                display: none;
+                            }
+                        }
+
+                        @media only screen and (max-width: 375px) {
+                            font-size: 32px;
+                            line-height: 60px;
+
+                            .title-border {
+                                border: 1px solid transparent !important;
+                                padding: 0 !important;
+                            }
+                        }
+
+                        .title-border {
+                            border: 1px solid transparent !important;
+                            padding: 0 !important;
+                        }
+                    }
+
+                    &-3 {
+                        text-transform: inherit;
+                    }
+
+                    &-4 {
+                        text-transform: inherit;
+                        font-family: 'Inter Tight';
+                        font-style: normal;
+                        font-weight: 700;
+                        font-size: 65px;
+                        line-height: 75px;
+                        letter-spacing: -0.01em;
+
+                        @include breakpoint(lg) {
+                            br {
+                                display: none;
+                            }
+                        }
+
+                        @include breakpoint(md) {
+                            font-size: 55px;
+                            line-height: 65px;
+                        }
+
+                        @include breakpoint(sm) {
+                            font-size: 45px;
+                            line-height: 55px;
+                        }
+
+                    }
+                }
+
+                .breadcrumb-title-blog {
+                    @include breakpoint(lg) {
+                        font-size: 49px;
+                        line-height: 61px;
+                    }
+                    @include breakpoint(md) {
+                        font-size: 40px;
+                        line-height: 50px;
+                    }
+                    @include breakpoint(sm) {
+                        font-size: 26px;
+                        line-height: 36px;
+                    }
+                }
+
+                .author {
+                    max-width: 676px;
+                    width: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    margin-top: 26px;
+                    flex-wrap: wrap;
+                    row-gap: 20px;
+                    column-gap: 15px;
+
+                    .name {
+                        display: flex;
+                        align-items: center;
+
+                        img {
+                            margin-right: 10px;
+                        }
+
+                        span {
+                            font-family: 'Inter Tight';
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 16px;
+                            line-height: 19px;
+                            color: #696969;
+                            margin-right: 5px;
+                        }
+
+                        h5 {
+                            font-family: 'Inter Tight';
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 16px;
+                            line-height: 19px;
+                            color: #0F0F0F;
+                            margin-bottom: 0;
+                        }
+
+                        &-2 {
+                            position: relative;
+
+                            &::before {
+                                position: absolute;
+                                content: '';
+                                background: #0F0F0F;
+                                top: 50%;
+                                left: -70%;
+                                width: 5px;
+                                height: 5px;
+                                border-radius: 50%;
+
+                                @include breakpoint(md) {
+                                    display: none;
+                                }
+                            }
+                        }
+
+                        &-3 {
+                            position: relative;
+
+                            &::before {
+                                position: absolute;
+                                content: '';
+                                background: #0F0F0F;
+                                top: 50%;
+                                left: -60%;
+                                width: 5px;
+                                height: 5px;
+                                border-radius: 50%;
+
+                                @include breakpoint(md) {
+                                    display: none;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            .dec {
+                font-family: 'Inter Tight';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 24px;
+                line-height: 40px;
+                color: #696969;
+                margin-bottom: 0;
+                display: flex;
+                align-items: center;
+                justify-content: end;
+                margin-right: 176px;
+                margin-top: 99px;
+
+                @include breakpoint(md) {
+                    margin-top: 40px;
+                    margin-right: 0;
+
+                    br {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}

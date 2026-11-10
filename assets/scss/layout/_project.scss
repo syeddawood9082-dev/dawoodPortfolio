@@ -1,0 +1,982 @@
+@use "../utilities" as *;
+
+/**----------------------------------------
+START: Project CSS
+----------------------------------------*/
+// project-section css
+.project-section {
+    @include breakpoint(xxl) {
+        padding: 100px 0;
+    }
+
+    @include breakpoint(md) {
+        padding: 80px 0;
+    }
+}
+
+.project-item-wrap {
+    @include flex-vertical-center;
+    column-gap: 50px;
+
+    @include breakpoint(sm) {
+        flex-direction: column;
+        row-gap: 24px;
+    }
+}
+
+.project-item {
+    position: relative;
+    // margin-right: -7px;
+
+    @include breakpoint(xxl) {
+        margin-left: 0;
+    }
+
+    @include breakpoint(md) {
+        margin-bottom: 50px;
+    }
+
+    @include breakpoint(sm) {
+        margin-bottom: 30px;
+    }
+
+    &-6 {
+        margin-right: 0px;
+        margin-left: 0px;
+    }
+
+    .project-thumb {
+        overflow: hidden;
+        max-width: 885px;
+        width: 100%;
+
+        img {
+            width: 100%;
+            // height: 570px;
+            object-fit: cover;
+            object-position: top;
+
+            @include breakpoint(md) {
+                // height: 80%;
+            }
+
+            @include breakpoint(sm) {
+                // height: 57%;
+            }
+        }
+
+        &-2 {
+            height: 100%;
+            max-width: 100%;
+            object-fit: cover;
+            overflow: visible;
+
+            img {
+                width: 100%;
+                height: 950px;
+                object-fit: cover;
+                object-position: top;
+
+                @include breakpoint(sm) {
+                    height: 350px;
+                }
+            }
+        }
+
+
+
+        &-3 {
+            height: 480px;
+            overflow: hidden;
+            width: 100%;
+
+            @include breakpoint(sm) {
+                height: 280px;
+            }
+
+            img {
+                width: 100%;
+                height: 480px;
+                object-fit: cover;
+                object-position: top;
+
+                @include breakpoint(sm) {
+                    height: 280px;
+                }
+            }
+        }
+
+    }
+
+    .project-content {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 20px;
+        flex-wrap: wrap;
+
+        .title {
+            font-family: 'Inter Tight';
+            font-weight: 600;
+            font-size: 24px;
+            line-height: 29px;
+            color: #0F0F0F;
+
+            @include breakpoint(xl) {
+                font-size: 22px;
+            }
+
+            @include breakpoint(lg) {
+                font-size: 15px;
+            }
+
+            @include breakpoint(md) {
+                font-size: 18px;
+            }
+
+            a {
+                transition: all 0.3s ease-in-out;
+
+                &:hover {
+                    color: #696969;
+                }
+            }
+
+            &-2 {
+                font-weight: 600;
+                font-size: 48px;
+                line-height: 60px;
+                color: #0F0F0F;
+                margin-right: 40px;
+
+                @include breakpoint(xl) {
+                    font-size: 30px;
+                    line-height: 42px;
+                }
+
+                @include breakpoint(md) {
+                    font-size: 28px;
+                    line-height: 42px;
+                    margin-right: 23px;
+                }
+            }
+        }
+
+        .project-list {
+            list-style: none;
+            @include flex-vertical-center;
+            column-gap: 10px;
+            flex-wrap: wrap;
+
+            li {
+                font-size: 16px;
+                text-align: center;
+                font-weight: 400;
+                border-radius: 100px;
+                padding: 2.5px 20px;
+                border: 1px solid rgba(15, 15, 15, 0.1);
+                border-radius: 100px;
+
+                @include breakpoint(lg) {
+                    font-size: 15px;
+                    text-align: center;
+                    font-weight: 400;
+                    border-radius: 100px;
+                    padding: 5px 17px;
+                }
+            }
+
+            &-3 {
+                li {
+                    @include breakpoint(sm) {
+                        font-size: 14px;
+                        padding: 7px 9px;
+                    }
+
+                }
+            }
+        }
+
+        & span {
+            font-family: 'Inter Tight';
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 19px;
+            color: #696969;
+
+        }
+
+        &-2 {
+            justify-content: start;
+            margin-top: 30px;
+
+            @include breakpoint(sm) {
+                flex-wrap: wrap;
+            }
+        }
+    }
+
+    .project-content-2 {
+        .title {
+            a {
+                transition: all 0.3s ease-in-out;
+
+                &:hover {
+                    color: #696969;
+                }
+            }
+        }
+    }
+
+    &.big-item {
+        .project-thumb {
+            height: 700px;
+
+            &-2 {
+                height: 100%;
+            }
+        }
+    }
+
+    &-1 {
+        @include breakpoint(xxl) {
+            margin-right: 60px;
+        }
+
+        @include breakpoint(md) {
+            margin-right: 7.5px;
+        }
+    }
+
+    &-3 {
+        margin-right: 30px;
+        margin-left: 162px;
+        margin-bottom: 93px;
+
+        @include breakpoint(xxl) {
+            margin-left: 100px;
+            margin-right: 0;
+        }
+
+        @include breakpoint(md) {
+            margin-left: 0px;
+            margin-bottom: 40px;
+        }
+
+    }
+
+    &-4 {
+        margin-right: -38px;
+
+        @include breakpoint(md) {
+            margin-right: 0;
+        }
+        @include breakpoint(lg) {
+            margin-bottom: 40px;
+        }
+    }
+}
+
+.project-item.project-item-2.big.item-2 {
+    margin-left: -46px;
+
+    @include breakpoint(xxl) {
+        margin-left: 0;
+
+    }
+}
+
+// Project CSS
+
+.project-section-2 {
+    overflow: hidden;
+
+    .section-heading {
+        padding-left: 0;
+    }
+
+    @include breakpoint(xl) {
+        margin: 0 15px;
+    }
+
+    .section-heading {
+        @include breakpoint(sm) {
+            margin-bottom: 50px;
+        }
+    }
+
+    .project-left {
+        margin-left: 26px;
+
+        @include breakpoint(xxl) {
+            margin-left: 0;
+        }
+
+        .last-item {
+            margin-left: -51px;
+            margin-right: 25px;
+
+            @include breakpoint(xxl) {
+                margin-left: 0;
+                margin-right: 0;
+            }
+        }
+    }
+}
+
+.project-item-2 {
+    padding-bottom: 150px;
+
+    @include breakpoint(lg) {
+        padding-bottom: 70px;
+    }
+
+    @include breakpoint(md) {
+        padding-bottom: 0px;
+    }
+
+    .project-thumb {
+        max-width: 885px;
+        width: 100%;
+        height: 570px;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        @include breakpoint(md) {
+            height: 450px;
+        }
+    }
+
+    &.big {
+        .project-thumb {
+            width: 735px;
+            height: 450px;
+
+            @include breakpoint(xxl) {
+                width: 100%;
+            }
+
+            @include breakpoint(md) {
+                height: 350px;
+            }
+        }
+
+        @include breakpoint(md) {
+            max-width: 100%;
+
+            .project-thumb {
+                max-width: 100%;
+            }
+        }
+    }
+
+    &.medium {
+        margin-right: auto;
+
+        .project-thumb {
+            max-width: 735px;
+            width: 100%;
+            height: 450px;
+
+            @include breakpoint(md) {
+                height: 350px;
+            }
+        }
+
+        @include breakpoint(md) {
+            max-width: 100%;
+
+            .project-thumb {
+                max-width: 100%;
+            }
+        }
+    }
+
+    &.small {
+        max-width: 520px;
+        margin: 0 auto;
+
+        .project-thumb {
+            max-width: 835px;
+            width: 100%;
+            height: 570px;
+
+            @include breakpoint(md) {
+                height: 450px;
+            }
+        }
+
+        @include breakpoint(md) {
+            max-width: 100%;
+
+            .project-thumb {
+                max-width: 100%;
+            }
+        }
+    }
+
+    &.item-2 {
+        max-width: 765px;
+        width: 100%;
+        margin-left: auto;
+        margin-right: 0;
+
+        @include breakpoint(md) {
+            max-width: 100%;
+
+            .project-thumb {
+                max-width: 100%;
+            }
+        }
+    }
+
+    &.item-5 {
+        padding-bottom: 0;
+
+        @include breakpoint(md) {
+            padding-bottom: 70px;
+        }
+
+        @include breakpoint(md) {
+            padding-bottom: 50px;
+        }
+
+        @include breakpoint(sm) {
+            padding-bottom: 50px;
+
+        }
+    }
+
+    &.item-6 {
+        max-width: 785px;
+        width: 100%;
+        margin-left: auto;
+        margin-right: 0;
+        padding-bottom: 0;
+
+        @include breakpoint(sm) {
+            max-width: 100%;
+
+            .project-thumb {
+                max-width: 100%;
+            }
+        }
+    }
+
+    @include breakpoint(md) {
+        max-width: 100%;
+
+        .project-thumb {
+            max-width: 100%;
+        }
+    }
+}
+
+.project-bottom-btn {
+    margin-top: 70px;
+
+    &-2 {
+        margin-top: 0px;
+    }
+
+    a {
+        font-family: var(--rr-ff-heading-2);
+        background-color: var(--rr-theme-primary);
+        height: 170px;
+        width: 170px;
+        margin: 0 auto;
+        color: var(--rr-heading-primary);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        row-gap: 10px;
+        text-align: center;
+        border-radius: 50%;
+        font-size: 15px;
+        font-weight: 500;
+        text-transform: uppercase;
+        line-height: 1.5;
+    }
+
+    &-4 {
+        margin-top: -33px;
+    }
+}
+
+// project-details css
+
+.Project__thumb {
+    display: flex;
+    gap: 30px;
+
+    @include breakpoint(md) {
+        flex-wrap: wrap;
+    }
+
+    & img {
+        width: 100%;
+        object-fit: cover;
+    }
+}
+
+.project-details {
+    &__content {
+        .title {
+            font-weight: 600;
+            font-size: 48px;
+            line-height: 60px;
+            color: #0F0F0F;
+            margin-bottom: 30px;
+
+            @include breakpoint(md) {
+                font-size: 40px;
+                line-height: 50px;
+            }
+        }
+
+        .dec {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 28px;
+            color: #696969;
+            margin-bottom: 28px;
+
+            @include breakpoint(lg) {
+                & br {
+                    display: none;
+                }
+            }
+        }
+
+        & p {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 28px;
+            color: #696969;
+
+            @include breakpoint(lg) {
+                & br {
+                    display: none;
+                }
+            }
+
+        }
+    }
+
+    &__info {
+
+        .title {
+            margin-bottom: 33px;
+            font-weight: 600;
+            font-size: 48px;
+            line-height: 60px;
+            color: #0F0F0F;
+
+            @include breakpoint(md) {
+                margin-top: 30px;
+            }
+        }
+    }
+
+    &__item {
+        display: flex;
+        gap: 75px;
+
+        @include breakpoint(lg) {
+            gap: 30px;
+        }
+
+        @include breakpoint(sm) {
+            gap: 20px;
+        }
+
+        &-2 {
+            gap: 120px;
+
+            @include breakpoint(lg) {
+                gap: 80px;
+            }
+
+            @include breakpoint(sm) {
+                gap: 30px;
+            }
+        }
+    }
+
+    &__list {
+        & span {
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 30px;
+            color: #696969;
+
+        }
+
+        & h4 {
+            font-size: 18px;
+            line-height: 30px;
+        }
+    }
+
+    &__brand {
+        & span {
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 30px;
+            color: #696969;
+
+        }
+
+        & h4 {
+            font-size: 18px;
+            line-height: 30px;
+        }
+    }
+}
+
+.project-service {
+    &__info {
+        & h3 {
+            font-weight: 600;
+            font-size: 48px;
+            line-height: 60px;
+            color: #0F0F0F;
+
+        }
+    }
+
+    &__content {
+        & p {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 28px;
+            color: #696969;
+
+            @include breakpoint(xl) {
+                & br {
+                    display: none;
+                }
+            }
+
+        }
+
+        .dec {
+            margin-top: 30px;
+        }
+    }
+
+    &__thumb {
+        margin: 80px 0;
+
+        @include breakpoint(md) {
+            margin: 40px 0;
+        }
+    }
+
+    &__wrap {
+        margin-top: 93px;
+    }
+}
+
+.project-brand {
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    &__item {
+        display: flex;
+        align-items: center;
+        gap: 70px;
+
+        @include breakpoint(lg) {
+            margin-bottom: 40px;
+        }
+
+        @include breakpoint(sm) {
+            flex-wrap: wrap;
+            gap: 40px;
+        }
+
+    }
+
+    &__wrap {
+        display: flex;
+        gap: 70px;
+        align-items: center;
+
+        @include breakpoint(sm) {
+            flex-wrap: wrap;
+            gap: 40px;
+        }
+    }
+
+    &__content {
+        & h4 {
+            font-weight: 600;
+            font-size: 24px;
+            line-height: 35px;
+            color: #0F0F0F;
+            margin-bottom: 25px;
+
+        }
+    }
+}
+
+
+//// Home-4 project-section start ////
+
+.project-section-4 {
+    &-wrapper {
+        background: #FFFFFF;
+        margin: 0 20px;
+
+        @include breakpoint(sm) {
+            margin: 0 15px;
+        }
+
+        .project-section-4-item {
+            margin-bottom: 100px;
+
+            @include breakpoint(sm) {
+                margin-bottom: 45px;
+            }
+        }
+
+        .row:last-child .col-xl-6:last-child .project-section-4-item {
+            margin-bottom: 0;
+        }
+
+        .section-heading {
+            .section-title-4 {
+                margin-left: -30px;
+
+                @include breakpoint(sm) {
+                    margin-left: 0;
+                }
+            }
+
+        }
+    }
+
+    &-item {
+        position: relative;
+
+        .content {
+            margin-top: 30px;
+            display: flex;
+            justify-content: space-between;
+
+            @include breakpoint(sm) {
+                flex-wrap: wrap;
+            }
+
+            .wrap {
+                .project-title {
+                    font-family: var(--rr-ff-heading);
+                    font-weight: var(--rr-fw-sbold);
+                    font-size: 24px;
+                    line-height: 35px;
+                    display: flex;
+                    align-items: center;
+                    color: #171717;
+                    transition: all 0.3s ease-in-out;
+
+                    &:hover {
+                        color: #9175FF;
+                    }
+
+                    @include breakpoint(md) {
+                        font-size: 20px;
+                        white-space: nowrap;
+                    }
+
+                    @include breakpoint(sm) {
+                        white-space: revert;
+                    }
+                }
+
+                .desg {
+                    font-size: 16px;
+                    line-height: 19px;
+                    margin-top: 11px;
+                    display: flex;
+                    align-items: center;
+                    color: var(--rr-text-body);
+                    font-family: var(--rr-ff-body);
+                    font-weight: var(--rr-fw-regular);
+                }
+
+                &-one {
+                    padding-left: 118px;
+
+                    @include breakpoint(sm) {
+                        padding-left: 0px;
+                    }
+                }
+
+            }
+
+            .year {
+                span {
+                    display: flex;
+                    font-size: 24px;
+                    line-height: 35px;
+                    color: #171717;
+                    align-items: center;
+                    font-family: var(--rr-ff-heading);
+                    font-weight: var(--rr-fw-sbold);
+
+                    @include breakpoint(sm) {
+                        font-size: 20px;
+                    }
+                }
+            }
+
+            &-one {
+                justify-content: inherit;
+                gap: 202px;
+
+                @include breakpoint(lg) {
+                    gap: 133px;
+                }
+
+                @include breakpoint(md) {
+                    gap: 63px;
+                }
+
+                @include breakpoint(sm) {
+                    justify-content: space-between;
+                    gap: 10px;
+                }
+            }
+        }
+
+        &-one {
+            margin-top: 99px;
+
+            @include breakpoint(sm) {
+                margin-top: 0;
+            }
+        }
+
+        &-two {
+            text-align: end;
+            margin-top: 99px;
+
+            @include breakpoint(sm) {
+                margin-top: 0;
+            }
+
+            .content {
+
+                @include breakpoint(lg) {
+                    margin-left: 0px;
+                }
+            }
+        }
+    }
+
+    &-thumb {
+        overflow: hidden;
+
+        img {
+            width: inherit;
+            height: inherit;
+            object-fit: cover;
+            object-position: top;
+
+            @include breakpoint(sm) {
+                width: 100%;
+            }
+        }
+    }
+}
+
+// h5-project css
+
+.h5-project {
+    &-wrapper {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 70px;
+        background: #fff;
+
+        @include breakpoint(xxl) {
+            margin: 0 15px;
+            padding: 0 20px;
+        }
+
+        @include breakpoint(lg) {
+            flex-wrap: wrap;
+        }
+
+        @include breakpoint(sm) {
+            flex-wrap: wrap;
+            margin: 0 7px;
+            padding: 0;
+        }
+    }
+
+    &-inner {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+
+        .project-list {
+            margin-top: 20px;
+            margin-right: 30px;
+
+            & li {
+                font-size: 16px;
+                text-align: center;
+                font-weight: 400;
+                border-radius: 100px;
+                padding: 5px 20px;
+                border: 1px solid rgba(15, 15, 15, 0.1);
+                border-radius: 100px;
+                list-style: none;
+
+            }
+        }
+
+    }
+
+}
+
+.project-list-3 {
+    & li {
+        padding: 7px 6px;
+    }
+}
+
+.project-details-section {
+    @include breakpoint(md) {
+        padding-top: 50px;
+    }
+
+    .section-br-bottom {
+        @include breakpoint(md) {
+            padding-bottom: 50px;
+        }
+    }
+}
+
+.project-service-section {
+    @include breakpoint(md) {
+        padding-top: 50px;
+    }
+
+    .project-service__wrap {
+        @include breakpoint(md) {
+            margin-top: 50px;
+        }
+    }
+}
+
+/* !END: Project CSS */

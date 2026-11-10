@@ -1,0 +1,98 @@
+@use "../utilities" as *;
+
+/**----------------------------------------
+    START: Counter CSS
+----------------------------------------*/
+
+.counter-item-wrap {
+    @include flex-vertical-center;
+    justify-content: space-between;
+    column-gap: 24px;
+    flex-wrap: wrap;
+    row-gap: 24px;
+
+    @include breakpoint(sm) {
+        flex-direction: column;
+    }
+}
+
+.counter-item {
+    .title {
+        font-size: 80px;
+        font-weight: 600;
+        margin-bottom: 0;
+        line-height: 1;
+        margin-bottom: 5px;
+
+        @include breakpoint(md) {
+            font-size: 60px;
+        }
+
+        .icon {
+            font-size: 70px;
+        }
+
+        .odometer-auto-theme {
+            line-height: 1;
+            font-family: inherit;
+        }
+
+        &-one {
+            display: flex;
+            font-size: 65px;
+            line-height: 79px;
+            align-items: center;
+            color: #171717;
+            font-family: var(--rr-ff-heading);
+            font-weight: var(--rr-fw-sbold);
+        }
+    }
+
+    p {
+        font-size: 16px;
+        font-weight: 500;
+        margin-bottom: 0;
+
+        @include breakpoint(md) {
+            font-weight: 400;
+        }
+    }
+
+    .about-desc {
+        display: flex;
+        font-size: 20px;
+        line-height: 30px;
+        color: #171717;
+        align-items: center;
+        font-family: var(--rr-ff-body);
+        font-weight: var(--rr-fw-medium);
+        margin-bottom: 25px;
+    }
+}
+
+
+.count-section {
+    .count-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        row-gap: 20px;
+        padding-top: 22px;
+        padding-bottom: 22px;
+        column-gap: 15px;
+        .count-item {
+            h4 {
+                font-family: 'Inter Tight';
+                font-style: normal;
+                font-weight: 600;
+                font-size: 20px;
+                line-height: 28px;
+                color: #0F0F0F;
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+
+/* !END: Counter CSS */

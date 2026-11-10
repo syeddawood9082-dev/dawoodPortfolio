@@ -1,0 +1,669 @@
+@use "../utilities" as *;
+
+/**----------------------------------------
+    START: Skill CSS
+----------------------------------------*/
+
+.skill-section-2 {
+    .section-heading {
+        @include breakpoint(md) {
+            margin-bottom: 30px !important;
+        }
+    }
+}
+
+
+.skill-section {
+    border-top: 1px solid var(--rr-color-border-1);
+    border-bottom: 1px solid var(--rr-color-border-1);
+    position: relative;
+    z-index: 1;
+
+    .mid-border {
+        background-color: var(--rr-color-border-1);
+        height: 100%;
+        width: 1px;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        opacity: 1;
+        z-index: -1;
+
+        @include breakpoint(xxl) {
+            left: 54%;
+        }
+
+        @include breakpoint(xl) {
+            display: none;
+        }
+    }
+}
+
+.skill-img {
+    max-width: 760px;
+    width: 100%;
+    height: 770px;
+    position: relative;
+    overflow: hidden;
+
+    @include breakpoint(lg) {
+        margin: 0 auto;
+    }
+
+    @include breakpoint(sm) {
+        height: 450px;
+    }
+
+    img {
+        max-width: 100%;
+        position: absolute;
+        bottom: 0;
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+.skill-content {
+    padding-left: 116px;
+
+    @include breakpoint(xl) {
+        padding-left: 0;
+    }
+
+    @include breakpoint(lg) {
+        max-width: 760px;
+        margin: 0 auto;
+        margin-top: 40px;
+    }
+}
+
+.skill-items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+    max-width: 660px;
+    width: 100%;
+
+    @include breakpoint(lg) {
+        max-width: 100%;
+    }
+
+    @include breakpoint(sm) {
+        grid-template-columns: 1fr;
+    }
+
+    .skill-item {
+        border: 1px solid rgba(15, 15, 15, 0.1);
+        border-radius: 10px;
+        padding: 30px;
+
+        .skill-item-top {
+            @include flex-vertical-center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            row-gap: 15px;
+            margin-bottom: 30px;
+
+            .number {
+                font-size: 16px;
+                font-weight: 400;
+            }
+        }
+
+        .title {
+            font-size: 22px;
+            font-weight: 500;
+            margin-bottom: 5px;
+            line-height: 1;
+        }
+
+        .category {
+            font-size: 16px;
+            font-weight: 400;
+            display: block;
+            margin-bottom: 30px;
+        }
+
+        .skill-btn {
+            font-size: 16px;
+            font-weight: 400;
+            padding: 7px 20px;
+            border-radius: 100px;
+            border: 1px solid rgba(15, 15, 15, 0.1);
+
+            &:hover {
+                color: var(--rr-color-heading-primary);
+                border-color: var(--rr-color-heading-primary);
+            }
+        }
+    }
+}
+
+
+// Skill 2
+
+.skill-item-wrap {
+    .skill-item-2 {
+        display: grid;
+        grid-template-columns: 116px 1fr;
+
+        @media only screen and (max-width: 550px) {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        &:not(:last-of-type) {
+            margin-bottom: 20px;
+        }
+
+        @media only screen and (max-width: 576px) {
+            &:not(:last-of-type) {
+                margin-bottom: 40px;
+            }
+        }
+
+        .icon {
+            height: 116px;
+            width: 116px;
+            border: 1px solid var(--rr-color-border-1);
+            border-radius: 50%;
+            @include flex-center;
+        }
+
+        .content {
+            @include flex-vertical-center;
+            justify-content: space-between;
+            column-gap: 20px;
+            flex-wrap: wrap;
+            row-gap: 15px;
+            padding: 20px 50px;
+            border: 1px solid var(--rr-color-border-1);
+            border-radius: 100px;
+            position: relative;
+
+            .item-text {
+                position: absolute;
+                top: 50%;
+                right: 30px;
+                transform: translateY(-50%);
+
+                span {
+                    color: rgba(28, 28, 40, 0.03);
+                    font-size: 70px;
+                    font-weight: 600;
+                    text-transform: uppercase;
+                    margin-bottom: 0;
+                    line-height: 1;
+                }
+            }
+
+            .left-content {
+                .title {
+                    font-size: 22px;
+                    font-weight: 600;
+                    margin-bottom: 5px;
+                    line-height: 1;
+                }
+
+                span {
+                    font-size: 16px;
+                    font-weight: 400;
+                    line-height: 1;
+                }
+            }
+
+            .text-span {
+                color: var(--rr-color-text-body);
+                font-size: 14px;
+                font-weight: 500;
+                padding: 3.5px 16px;
+                border: 1px solid rgba(28, 28, 40, 0.1);
+                border-radius: 30px;
+            }
+        }
+    }
+}
+
+//// Home 4 skill area start 
+.skill-section-4 {
+    &-area {
+        background: white;
+    }
+
+    &-wrapp {
+        display: flex;
+        // gap: 40px;
+        justify-content: space-around;
+        padding: 0px 19px 0px 42px;
+
+        @include breakpoint(xxl) {
+            padding: 0px 21px 0px 15px;
+        }
+
+        @include breakpoint(xl) {
+            flex-wrap: wrap;
+            justify-content: start;
+        }
+
+        @include breakpoint() {
+            padding: 0px 15px 0px 15px;
+        }
+
+        .skill-title {
+            .title {
+                display: flex;
+                font-size: 250px;
+                line-height: 210px;
+                color: #171717;
+                align-items: center;
+                letter-spacing: -0.02em;
+                text-transform: uppercase;
+                font-family: var(--rr-ff-heading);
+                font-weight: var(--rr-fw-bold);
+
+                @include breakpoint(xxl) {
+                    font-size: 177px;
+                    line-height: 177px;
+                }
+
+
+                @include breakpoint(xl) {
+                    margin-bottom: 30px;
+                }
+
+                @include breakpoint(lg) {
+                    font-size: 156px;
+                    margin-bottom: 0;
+                }
+
+                @include breakpoint(md) {
+                    font-size: 124px;
+                    margin-bottom: 0;
+                }
+
+                @include breakpoint(sm) {
+                    font-size: 48px;
+                    line-height: 1;
+                    margin-bottom: 20px;
+                }
+            }
+        }
+
+        .skill-thumb {
+            img {
+                max-width: inherit;
+
+                @include breakpoint(xxl) {
+                    width: 100%;
+                }
+
+                @include breakpoint(lg) {
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    &-bottom-wrapper {
+
+        .skill-section-4-bottom-wrapper {
+            .skill-row {
+
+                .main,
+                .description,
+                .icon {
+                    opacity: 0;
+                    visibility: hidden;
+                    transition: all 0.3s ease;
+                }
+
+                &.active {
+
+                    .main,
+                    .description,
+                    .icon {
+                        opacity: 1;
+                        visibility: visible;
+                    }
+                }
+            }
+        }
+
+
+        .content {
+            display: flex;
+            justify-content: space-between;
+            padding: 34px 0px;
+            border-top: 1px solid rgba(23, 23, 23, 0.1);
+
+            .title {
+                .skills {
+                    font-size: 22px;
+                    line-height: 30px;
+                    display: flex;
+                    align-items: center;
+                    color: #1C1C28;
+                    font-family: var(--rr-ff-heading);
+                    font-weight: var(--rr-fw-sbold);
+                }
+            }
+
+            .description {
+                .desc {
+                    display: flex;
+                    font-size: 16px;
+                    line-height: 28px;
+                    align-items: center;
+                    color: var(--rr-text-body);
+                    font-weight: var(--rr-fw-regular);
+                    font-family: var(--rr-ff-heading);
+                    padding-right: 60px;
+                    transition: all 0.3s ease-in-out;
+
+                    @include breakpoint(lg) {
+                        padding-right: 85px;
+                    }
+
+                    @include breakpoint(md) {
+                        padding-right: 70px;
+                    }
+                }
+            }
+
+            .icon {
+
+                i {
+                    width: 40px;
+                    height: 40px;
+                    border: 1px solid rgba(23, 23, 23, 0.1);
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border-radius: 100%;
+                    transform: rotate(-45deg);
+                    transition: all 0, 3s ease-in-out;
+                }
+            }
+        }
+
+        .main {
+
+            .number-item {
+                width: 139px;
+                height: 139px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                background: #9175FF;
+                border-radius: 20px;
+                transform: rotate(23.47deg);
+                position: relative;
+                overflow: hidden;
+
+                .numbr {
+                    top: 37px;
+                    left: -82px;
+                    font-size: 200px;
+                    line-height: 0.7;
+                    text-align: center;
+                    color: #F3F4F6;
+                    position: absolute;
+                    font-family: var(--rr-ff-heading);
+                    font-weight: var(--rr-fw-sbold);
+                    transform: rotate(-23.47deg);
+                }
+            }
+        }
+
+        .row:last-child {
+            .content {
+                border-bottom: 1px solid rgba(23, 23, 23, 0.1);
+            }
+        }
+    }
+}
+
+.award-section-4 {
+    .main {
+        height: 90px;
+        position: relative;
+        transition: all 0.5s ease-in-out;
+
+        @include breakpoint(sm) {
+            height: inherit;
+            position: inherit;
+            display: flex;
+            align-content: center;
+            justify-content: center;
+        }
+
+        &.active {
+            .number-item {
+                display: block;
+            }
+        }
+
+        .number-item {
+            width: 139px;
+            height: 139px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background: #9175FF;
+            border-radius: 20px;
+            transform: rotate(23.47deg);
+            position: relative;
+            overflow: hidden;
+            display: none;
+            position: absolute;
+            top: 0;
+            left: 76px;
+
+            @include breakpoint(xl) {
+                left: 20px;
+            }
+
+            @include breakpoint(md) {
+                width: 120px;
+                height: 120px;
+            }
+
+            @include breakpoint(sm) {
+                position: inherit;
+                top: 0;
+                left: 0;
+            }
+
+            .numbr {
+                top: 37px;
+                left: -82px;
+                font-size: 200px;
+                line-height: 0.7;
+                text-align: center;
+                color: #F3F4F6;
+                position: absolute;
+                font-family: var(--rr-ff-heading);
+                font-weight: var(--rr-fw-sbold);
+                transform: rotate(-23.47deg);
+
+                @include breakpoint(md) {
+                    font-size: 150px;
+                    top: 31px;
+                    left: -57px;
+                }
+            }
+        }
+    }
+
+    .award-accordion {
+        .accordion-item {
+            border: none;
+            background: transparent;
+            position: relative;
+            border-radius: 0;
+
+            &:last-child {
+                border-bottom: 1px solid rgba(23, 23, 23, 0.1);
+            }
+
+            .accordion-header {
+                border: none;
+
+                .accordion-button {
+                    border-top: 1px solid rgba(23, 23, 23, 0.1);
+                    border-bottom: 1px solid rgba(23, 23, 23, 0.1);
+                    font-size: 22px;
+                    line-height: 30px;
+                    display: flex;
+                    align-items: center;
+                    color: #1C1C28;
+                    font-family: var(--rr-ff-heading);
+                    font-weight: var(--rr-fw-sbold);
+
+
+                    &:after {
+                        transform: rotate(0deg);
+                        background: transparent;
+                        color: var(--rr-color-heading-primary);
+                        border: 1px solid rgba(23, 23, 23, 0.1);
+                    }
+
+                    &:not(.collapsed) {
+                        border-top: 1px solid rgba(23, 23, 23, 0.1);
+                        border-bottom: none;
+                        padding-top: 38px;
+
+                        &:after {
+
+                            transform: rotate(-45deg);
+                            background: #9175FF;
+                            color: #fff;
+                            width: 40px;
+                            height: 40px;
+                            text-align: center;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            border-radius: 100%;
+                        }
+                    }
+
+                    &.collapsed {
+                        border-top: 1px solid rgba(23, 23, 23, 0.1);
+                        border-bottom: none;
+
+                        &:after {
+                            transform: rotate(0deg);
+                            background: transparent;
+                            color: var(--rr-color-heading-primary);
+                            border: 1px solid rgba(23, 23, 23, 0.1);
+                            width: 40px;
+                            height: 40px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            border-radius: 100%;
+                        }
+                    }
+                }
+
+            }
+
+            .accordion-body {
+                max-width: 347px;
+                margin-left: 38.5%;
+                margin-top: -67px;
+                position: relative;
+                z-index: 22227;
+                padding: 0 0 30px 0;
+
+                @include breakpoint(md) {
+                    margin-top: 0;
+                    margin-left: 0;
+                }
+
+                .desc {
+                    margin-bottom: 32px;
+
+                }
+
+                &-one {
+                    margin-left: 50%;
+
+                    @include breakpoint(md) {
+                        margin-top: 0;
+                        margin-left: 0;
+                    }
+                }
+
+                .description {
+                    padding-left: 180px;
+
+                    @include breakpoint(xl) {
+                        padding-left: 78px;
+                    }
+
+                    @include breakpoint(lg) {
+                        padding-left: 118px;
+                    }
+
+                    @include breakpoint(md) {
+                        padding-left: 30px;
+                    }
+
+                    @include breakpoint(sm) {
+                        padding-left: 0;
+                        padding-right: 13px;
+                    }
+
+                    br {
+                        @include breakpoint(md) {
+                            display: none;
+                        }
+                    }
+
+                    .desc {
+                        display: flex;
+                        font-size: 16px;
+                        line-height: 28px;
+                        align-items: center;
+                        color: #696969;
+                        font-weight: var(--rr-fw-regular);
+                        font-family: var(--rr-ff-heading);
+                        padding-right: 60px;
+                        transition: all 0.4s ease-in-out;
+
+                        @include breakpoint(lg) {
+                            padding-right: 85px;
+                        }
+
+                        @include breakpoint(md) {
+                            padding-right: 70px;
+                        }
+
+                        @include breakpoint(sm) {
+                            padding-right: 38px;
+                        }
+                    }
+
+                }
+            }
+        }
+
+        &-4 {
+            @include breakpoint(sm) {
+                margin-top: 50px;
+            }
+        }
+    }
+}
+
+
+
+/* !END: Skill CSS */

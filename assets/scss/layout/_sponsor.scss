@@ -1,0 +1,21 @@
+@use "../utilities" as *;
+
+/**----------------------------------------
+    START: Page Header CSS
+----------------------------------------*/
+
+.sponsor-section{
+    padding: 70px 0;
+    border-bottom: 1px solid rgba(15, 15, 15, 0.1);
+    border-top: 1px solid rgba(15, 15, 15, 0.1);
+}
+.sponsor-item {
+    & img{
+        opacity: .5;
+        transition: all .3s ease-in-out;
+        &:hover{
+            opacity: 1;
+        }
+    }
+}
+/* !END: Page Header CSS */

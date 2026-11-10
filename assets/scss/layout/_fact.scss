@@ -1,0 +1,54 @@
+@use "../utilities" as *;
+
+.fact {
+    &__wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        border-bottom: 1px solid rgba(28, 28, 40, 0.1);
+        border-top: 1px solid rgba(28, 28, 40, 0.1);
+        padding-top: 65px;
+        padding-bottom: 30px;
+
+        @include breakpoint(md) {
+            gap: 25px;
+        }
+
+        @include breakpoint(sm) {
+            gap: 50px;
+            margin-bottom: 30px;
+            justify-content: center;
+        }
+
+        @media only screen and (max-width: 576px) {
+            gap: 70px;
+        }
+    }
+
+    &__item {
+        & p {
+            font-weight: 500;
+            font-size: 24px;
+            line-height: 29px;
+            color: #696969;
+            margin-bottom: 0px;
+
+            @include breakpoint(sm) {
+                font-size: 18px;
+            }
+        }
+
+        & h2 {
+            font-weight: 600;
+            font-size: 100px;
+            line-height: 121px;
+            letter-spacing: -0.03em;
+            color: #1C1C28;
+
+            @include breakpoint(md) {
+                font-size: 70px;
+                line-height: 100px;
+            }
+        }
+    }
+}

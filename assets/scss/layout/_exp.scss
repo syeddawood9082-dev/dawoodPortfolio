@@ -1,0 +1,93 @@
+@use "../utilities" as *;
+
+/**----------------------------------------
+    START: EXP CSS
+----------------------------------------*/
+
+.exp-secction {
+    border-top: 1px solid var(--rr-color-border-1);
+
+    .exp-left-content {
+        @include breakpoint(md) {
+            margin-bottom: 30px;
+        }
+    }
+
+    .section-heading {
+        .section-title {
+            @include breakpoint(xl) {
+                br {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+.exp-content {
+    .exp-item {
+        padding-bottom: 31px;
+        border-bottom: 1px solid var(--rr-color-border-1);
+
+        &:not(:last-of-type) {
+            margin-bottom: 40px;
+        }
+
+        .exp-item-inner {
+            @include flex-vertical-center;
+            justify-content: space-between;
+            column-gap: 20px;
+            flex-wrap: wrap;
+            row-gap: 15px;
+
+            .left-content {
+                display: grid;
+                align-items: center;
+                grid-template-columns: 40px 1fr;
+                grid-gap: 30px;
+
+                .content {
+                    .name {
+                        font-size: 24px;
+                        font-weight: 600;
+                        margin-bottom: 0;
+                    }
+
+                    span {
+                        font-size: 18px;
+                        font-weight: 500;
+                    }
+                }
+            }
+
+            .year {
+                color: var(--rr-color-text-body);
+                font-size: 14px;
+                font-weight: 500;
+                margin-bottom: 0;
+                padding: 6.2px 14.5px;
+                border: 1px solid var(--rr-color-border-1);
+                border-radius: 100px;
+            }
+        }
+
+        p {
+            margin-top: 16px;
+            margin-bottom: 0;
+            line-height: 1.7;
+            margin-left: 72px;
+
+            @include breakpoint(xl) {
+                br {
+                    display: none;
+                }
+            }
+
+            @include breakpoint(sm) {
+                margin-left: 0;
+            }
+        }
+    }
+}
+
+/* !END: EXP CSS */

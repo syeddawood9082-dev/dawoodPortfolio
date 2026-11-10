@@ -1,0 +1,127 @@
+@use "../utilities" as *;
+
+.pricing{
+    padding:43px 50px;
+    border: 1px solid rgba(15, 15, 15, 0.1);
+    border-radius: 15px;
+    @include breakpoint(xl){
+        padding:43px 40px;
+    }
+    @include breakpoint(lg){
+        margin-bottom: 30px;
+    }
+    @include breakpoint(md){
+        padding:43px 35px;
+    }
+    @include breakpoint(sm){
+        padding: 43px 2px 43px 6px;
+    }
+    &__badge{
+        margin-bottom: 7px; 
+        & span{
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 22px;
+            color: #0F0F0F;
+                       
+        }
+    }
+    &__price{
+        margin-bottom: 27px;
+        & h2{
+            font-weight: 600;
+            font-size: 40px;
+            line-height: 48px;
+            color: #0F0F0F;
+            & span{
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 28px;
+                color: #696969;
+                
+                
+            }
+        }
+    }
+    &__content{
+        margin-bottom: 40px;
+        & p{
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 28px;
+            color: #696969;
+            @include breakpoint(md){
+                & br{
+                    display: none;
+                }
+            }
+            
+        }
+    }
+    &__list{
+        margin-top: 36px;
+        & ul{
+            & li{
+                list-style: none;
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 19px;
+                color: #696969;
+                margin-bottom: 25px;
+                position: relative;
+                margin-left: 20px;
+                &::before{
+                    content: '';
+                    position: absolute;
+                    height: 5px;
+                    width: 5px;
+                    left: -20px;
+                    top: 7px;
+                    border-radius: 100%;
+                    background: #0F0F0F;
+                }                
+            }
+        }
+    }
+}
+  .triple-line {
+  border-top: 1px solid #e0e0e0;
+  height: 7px;
+}
+
+.app-price-tab-wrap{
+    margin-bottom: 70px;
+    text-align: center;
+    margin-left: -31%;
+    @include breakpoint(lg){
+        margin-left: 0;
+    }
+}
+
+.ai-price{
+    &-tab{
+        &-wrap{
+            margin-bottom: 70px;
+        }
+        ul{
+            padding: 4px;
+            background: #F4F4F4;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 29.5px;
+            & li{
+                & button{
+                    padding: 10px 31.8px;
+                    font-weight: 500;
+                    font-size: 16px;
+                    line-height: 19px;
+                    color: #696969;
+                    &.active{
+                        color: #0F0F0F;
+                        background: #FFFFFF;
+                        border-radius: 30px;
+                    }
+                }
+            }
+        }
+    }
+}

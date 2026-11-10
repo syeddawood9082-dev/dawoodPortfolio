@@ -1,0 +1,593 @@
+@use "../utilities" as *;
+
+/**----------------------------------------
+    START: Award CSS
+----------------------------------------*/
+
+.award-accordion {
+    .accordion-item {
+        border: none;
+
+        &:last-child {
+            .accordion-header {
+                .accordion-button {
+                    border-bottom: 1px solid var(--rr-color-border-1);
+                }
+            }
+        }
+
+        .accordion-header {
+            border: none;
+
+            .accordion-button {
+                background-color: var(--rr-color-common-white);
+                box-shadow: none;
+                padding: 22px 0;
+                border: none;
+                border-top: 1px solid var(--rr-color-border-1);
+                border-radius: 0;
+
+                @include breakpoint(sm) {
+                    gap: 30px;
+                }
+
+                @media only screen and (max-width: 450px) {
+                    gap: 6px;
+                }
+
+                &:after {
+                    color: var(--rr-color-heading-primary);
+                    background-image: none;
+                    font-family: "Font Awesome 6 Pro";
+                    font-size: 14px;
+                    font-weight: 500;
+                    content: "\f061";
+                }
+
+                &:not(.collapsed) {
+                    border-top: 1px solid var(--rr-color-heading-primary);
+
+                    &:after {
+                        transform: rotate(-45deg);
+                    }
+                }
+
+                .award-item-top {
+                    @include flex-vertical-center;
+                    justify-content: space-between;
+                    width: 100%;
+                    max-width: 570px;
+
+                    span {
+                        color: var(--rr-color-text-body);
+                        font-size: 16px;
+                        font-weight: 400;
+                    }
+
+                    .title {
+                        color: var(--rr-color-heading-primary);
+                        font-size: 20px;
+                        font-weight: 500;
+                        margin-bottom: 0;
+                        line-height: 1;
+                    }
+                }
+            }
+        }
+
+        .accordion-body {
+            padding: 0;
+
+            .award-img {
+                margin-bottom: 20px;
+            }
+        }
+    }
+}
+
+.award-shape.p-absolute {
+    left: 258px;
+    top: -43px;
+
+    @include breakpoint(lg) {
+        left: 170px;
+        top: -52px;
+    }
+
+    @include breakpoint(sm) {
+        left: 148px;
+        top: -54px;
+
+    }
+}
+
+/* !END: Award CSS */
+
+
+// award-section-3 style 
+.award-section {
+    .award-content {
+        @include breakpoint(md) {
+            display: flex;
+            justify-content: space-between;
+        }
+        @include breakpoint(sm) {
+            flex-wrap: wrap;
+        }
+
+        .section-title {
+            @include breakpoint(md) {
+                max-width: 215px;
+            }
+        }
+    }
+
+    &__area-3 {
+        @include breakpoint(xxl) {
+            padding-top: 100px;
+        }
+    }
+
+    &-box {
+        display: flex;
+        align-items: center;
+        gap: 99px;
+
+        @media(min-width: 320px) and (max-width: 575px) {
+            gap: 35px;
+            flex-wrap: wrap;
+        }
+    }
+
+    &__title {
+        display: flex;
+        font-size: 18px;
+        line-height: 22px;
+        align-items: center;
+        font-family: var(--rr-ff-heading);
+        font-weight: var(--rr-fw-medium);
+        color: var(--rr-color-theme-primary);
+        margin-bottom: 0;
+
+        @media (min-width: 320px) and (max-width: 575px) {
+            font-size: 17px;
+        }
+
+        &-box {
+            display: flex;
+            align-items: center;
+            column-gap: 265px;
+
+            @include breakpoint(lg) {
+                column-gap: 150px;
+            }
+
+            @include breakpoint(md) {
+                column-gap: 100px;
+            }
+
+            @media (min-width: 576px) and (max-width: 768px) {
+                display: block;
+            }
+
+            @media (min-width: 320px) and (max-width: 575px) {
+                display: block;
+            }
+
+            .date {
+                display: flex;
+                font-size: 16px;
+                line-height: 19px;
+                align-items: center;
+                font-family: var(--rr-ff-heading);
+                font-weight: var(--rr-fw-regular);
+                color: var(--rr-color-text-body);
+            }
+
+            & span {
+                color: #403C38;
+                font-size: 13px;
+                font-weight: 500;
+                line-height: 1;
+                text-transform: uppercase;
+                font-family: var(--rr-ff-heading);
+
+                @media (min-width: 320px) and (max-width: 575px) {
+                    font-size: 11px;
+                }
+            }
+        }
+
+        &-3 {
+            font-size: 22px;
+            line-height: 28px;
+            display: flex;
+            align-items: center;
+            color: var(--rr-common-white);
+            font-family: var(--rr-ff-heading-2);
+            font-weight: var(--rr-fw-medium);
+            text-transform: capitalize;
+            margin-bottom: 0;
+
+            @media (min-width: 576px) and (max-width: 768px) {
+                font-size: 18px;
+            }
+
+            @media (min-width: 320px) and (max-width: 575px) {
+                font-size: 17px;
+                line-height: 45px;
+            }
+        }
+    }
+
+    &__sub-title {
+        display: flex;
+        font-size: 16px;
+        line-height: 19px;
+        align-items: center;
+        font-family: var(--rr-ff-heading);
+        font-weight: var(--rr-fw-regular);
+        color: var(--rr-color-text-body);
+        margin-bottom: 0;
+    }
+
+    &__item {
+        padding: 18px 0;
+        position: relative;
+        border-radius: 10px;
+        transition: .3s;
+
+        @include breakpoint(xl) {
+            padding: 15px 0;
+        }
+
+        border-top: 1px solid rgba(15, 15, 15, 0.1);
+
+        &:hover {
+            background-color: #EEE7DF;
+
+            & .award-section__link {
+                span {
+                    color: #fff;
+                    background-color: #453030;
+
+                    i {
+                        transform: rotate(0);
+                    }
+                }
+            }
+
+        }
+
+        &-3 {
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: inherit;
+
+            &:hover {
+                background: inherit;
+            }
+
+            &:last-child {
+                padding-bottom: 18px;
+                border-bottom: 1px solid rgba(15, 15, 15, 0.1);
+            }
+        }
+    }
+}
+
+.award-section__item {
+    border-top: 1px solid rgba(15, 15, 15, 0.1);
+
+    & .rr-hover-reveal-bg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 174px;
+        height: 259px;
+        opacity: 0;
+        margin: -100px 0 0 -150px;
+        overflow: hidden;
+        pointer-events: none;
+        z-index: 99;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        -webkit-transition: opacity 0.3s,
+            transform 0.5s cubic-bezier(0.215, 0.61, 0.355, 1),
+            -webkit-transform 0.5s cubic-bezier(0.215, 0.61, 0.355, 1);
+        -moz-transition: opacity 0.3s,
+            transform 0.5s cubic-bezier(0.215, 0.61, 0.355, 1),
+            -webkit-transform 0.5s cubic-bezier(0.215, 0.61, 0.355, 1);
+        -ms-transition: opacity 0.3s,
+            transform 0.5s cubic-bezier(0.215, 0.61, 0.355, 1),
+            -webkit-transform 0.5s cubic-bezier(0.215, 0.61, 0.355, 1);
+        -o-transition: opacity 0.3s,
+            transform 0.5s cubic-bezier(0.215, 0.61, 0.355, 1),
+            -webkit-transform 0.5s cubic-bezier(0.215, 0.61, 0.355, 1);
+        transition: opacity 0.3s,
+            transform 0.5s cubic-bezier(0.215, 0.61, 0.355, 1),
+            -webkit-transform 0.5s cubic-bezier(0.215, 0.61, 0.355, 1);
+
+        &-back {
+            background-size: inherit;
+        }
+
+        @media (min-width: 320px) and (max-width: 575px) {
+            display: none;
+        }
+
+    }
+
+    &:hover {
+        .rr-hover-reveal-bg {
+            opacity: 1;
+        }
+
+
+    }
+}
+
+.award-section-3 {
+    &__wraper {
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px solid rgba(15, 15, 15, 0.1);
+
+        &-2 {
+            gap: 190px;
+            border: none;
+        }
+
+        @include breakpoint(xxl) {
+            padding: 0 15px;
+        }
+
+        @include breakpoint(xl) {
+            align-items: center;
+        }
+
+        @include breakpoint(lg) {
+            display: inherit;
+            flex-wrap: wrap;
+        }
+
+        @include breakpoint(md) {
+            flex-wrap: wrap;
+            padding: 0 15px;
+        }
+
+        @media (min-width: 576px) and (max-width: 768px) {
+            flex-wrap: wrap;
+        }
+
+        @media (min-width: 320px) and (max-width: 575px) {
+            flex-wrap: wrap;
+        }
+
+        .item1 {
+            margin: auto 0;
+
+            @include breakpoint(xl) {
+                display: flex;
+                justify-content: start;
+            }
+
+            @include breakpoint(lg) {
+                display: inherit;
+            }
+
+            @media (min-width: 576px) and (max-width: 768px) {
+                justify-content: center;
+                flex-wrap: wrap;
+            }
+
+            @media (min-width: 320px) and (max-width: 575px) {
+                flex-wrap: wrap;
+            }
+
+            .award-image {
+                margin-left: 69px;
+                margin-top: -50px;
+
+                @include breakpoint(xxl) {
+                    margin-left: 0;
+                }
+
+                @include breakpoint(xl) {
+                    margin-left: 10px;
+                }
+
+                @include breakpoint(lg) {
+                    margin-left: 0;
+                }
+
+                @include breakpoint(md) {
+                    margin-left: 0;
+                }
+
+                img {
+                    max-width: inherit;
+
+                    @media(min-width: 1700) and (max-width: 1890px) {}
+
+                    @include breakpoint(xxxl) {
+                        max-width: 100%;
+                    }
+
+                    @include breakpoint(xxl) {
+                        max-width: 100%;
+                    }
+
+                    @include breakpoint(xl) {
+                        width: 100%;
+                    }
+
+                    @media (min-width: 320px) and (max-width: 575px) {
+                        flex-wrap: wrap;
+                    }
+
+                }
+            }
+        }
+
+        .item2 {
+            width: 798px;
+            margin-right: 70px;
+            position: relative;
+            padding: 69px 0;
+
+            @media(min-width: 1700px) and (max-width: 1890px) {
+                margin-left: 120px;
+            }
+
+            @include breakpoint(xxxl) {
+                margin-left: 117px;
+            }
+
+            @include breakpoint(xxl) {
+                margin-right: 0;
+                margin-left: 110px;
+                padding: 0 0 69px 0;
+            }
+
+            @include breakpoint(xl) {
+                margin-right: 20px;
+                margin-left: 40px;
+            }
+
+            @include breakpoint(lg) {
+                max-width: 100%;
+                width: inherit;
+                margin-right: 20px;
+                margin-left: 20px;
+                padding: 69px 0;
+            }
+
+            @include breakpoint(md) {
+                margin-right: 0;
+                margin-left: 0;
+            }
+
+            @media(min-width: 320px) and (max-width: 575px) {
+                margin-right: 0;
+                margin-left: 0;
+            }
+
+            &::before {
+                content: '';
+                left: -69px;
+                top: 0;
+                display: block;
+                width: 1px;
+                height: 726px;
+                position: absolute;
+                background: rgba(15, 15, 15, 0.1);
+
+                @include breakpoint(xl) {
+                    display: none;
+                }
+            }
+
+            .sub-title {
+                display: flex;
+                font-size: 16px;
+                line-height: 19px;
+                position: relative;
+                padding-left: 10px;
+                align-items: center;
+                text-transform: uppercase;
+                color: var(--rr-color-theme-primary);
+                font-family: var(--rr-ff-heading);
+                font-weight: var(--rr-fw-medium);
+                margin-bottom: 15px;
+
+                &::before {
+                    content: '';
+                    left: 0;
+                    width: 5px;
+                    height: 5px;
+                    display: block;
+                    position: absolute;
+                    background: var(--rr-color-theme-primary);
+                    border-radius: 100%;
+                }
+
+            }
+
+            .award-title {
+                display: flex;
+                font-weight: var(--rr-fw-sbold);
+                font-size: 48px;
+                line-height: 60px;
+                align-items: center;
+                color: var(--rr-color-theme-primary);
+                font-family: var(--rr-ff-heading);
+                margin-bottom: 47px;
+
+                @media(min-width: 320px) and (max-width: 575px) {
+                    font-size: 33px;
+                    line-height: 47px;
+                }
+            }
+
+            .section-title {
+                font-size: 50px;
+                line-height: 60px;
+                color: var(--rr-common-white);
+                font-family: var(--rr-ff-heading-2);
+                font-weight: var(--rr-fw-medium);
+                margin-bottom: 91px;
+
+                @include breakpoint(xl) {
+                    margin-top: 40px;
+                }
+
+                @include breakpoint(lg) {
+                    font-size: 44px;
+                    line-height: 55px;
+                }
+
+                @include breakpoint(md) {
+                    font-size: 34px;
+                    line-height: 46px;
+                }
+
+                @media (min-width: 576px) and (max-width: 768px) {
+                    font-size: 28px;
+                    line-height: 45px;
+                    margin-bottom: 60px;
+                }
+
+                @media (min-width: 320px) and (max-width: 575px) {
+                    font-size: 21px;
+                    line-height: 30px;
+                    margin-bottom: 50px;
+                }
+
+                span {
+                    color: #999999;
+                }
+            }
+
+            .award-section {
+                &__content {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+
+                    @media (min-width: 320px) and (max-width: 575px) {
+                        flex-wrap: wrap;
+                        gap: 15px;
+
+                    }
+                }
+            }
+
+            &-3 {
+                &::before {
+                    display: none;
+                }
+            }
+        }
+    }
+}
