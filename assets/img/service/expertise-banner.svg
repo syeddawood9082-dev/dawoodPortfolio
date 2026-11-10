@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="415" height="250" viewBox="0 0 415 250">
+  <rect width="415" height="250" fill="#14101f"/>
+  <g fill="none" stroke="#8a36ff" stroke-width="3">
+    <path d="M-10 150 C 80 115, 140 175, 230 140 S 360 110, 425 145" opacity="0.9"/>
+    <path d="M-10 185 C 80 150, 140 210, 230 175 S 360 145, 425 180" opacity="0.6"/>
+    <path d="M-10 220 C 80 185, 140 245, 230 210 S 360 180, 425 215" opacity="0.4"/>
+  </g>
+  <g fill="none" stroke="#ffffff" stroke-width="2" opacity="0.3">
+    <path d="M-10 115 C 80 80, 140 140, 230 105 S 360 75, 425 110"/>
+  </g>
+  <text x="30" y="66" font-family="Helvetica, Arial, sans-serif" font-weight="700" font-size="27" fill="#ffffff">Data engineering</text>
+  <text x="30" y="100" font-family="Helvetica, Arial, sans-serif" font-size="19" fill="#b7a8dd">end to end, source to query</text>
+</svg>
