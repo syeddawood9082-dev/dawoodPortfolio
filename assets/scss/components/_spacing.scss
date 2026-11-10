@@ -1,0 +1,81 @@
+@use '../utilities' as *;
+
+.section-space-4 {
+    padding-top: 130px;
+    padding-bottom: 130px;
+
+    @include breakpoint(md) {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+
+    @include breakpoint(sm) {
+        padding-top: 70px;
+        padding-bottom: 70px;
+    }
+
+    &-one {
+        padding-bottom: 50px;
+    }
+
+    &-two {
+        padding-top: 140px;
+        padding-bottom: 175px;
+
+        @include breakpoint(sm) {
+            padding-top: 80px;
+            padding-bottom: 80px;
+        }
+    }
+
+    &-three {
+        padding-top: 130px;
+        padding-bottom: 114px;
+
+        @include breakpoint(md) {
+            padding-top: 80px;
+            padding-bottom: 80px;
+        }
+
+        @include breakpoint(sm) {
+            padding-top: 70px;
+            padding-bottom: 50px;
+        }
+    }
+}
+
+.section-space-top {
+    padding-top: 96px;
+
+    @include breakpoint(md) {
+        padding-top: 80px;
+    }
+
+    @include breakpoint(sm) {
+        padding-top: 70px;
+    }
+}
+
+.section-space-wrap {
+    padding-top: 130px;
+
+    @include breakpoint(lg) {
+        padding-top: 80px;
+    }
+
+    @include breakpoint(sm) {
+        padding-top: 50px;
+    }
+}
+
+.section-space-bottom-170 {
+    padding-bottom: 170px;
+
+    @include breakpoint(md) {
+        padding-bottom: 80px;
+    }
+
+    @include breakpoint(sm) {
+        padding-bottom: 70px;
+    }
+}

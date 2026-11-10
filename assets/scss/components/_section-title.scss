@@ -1,0 +1,109 @@
+@use '../utilities' as *;
+
+.section-title {
+    font-size: 48px;
+    line-height: 60px;
+    display: flex;
+    align-items: center;
+    color: #171717;
+    font-family: var(--rr-ff-heading);
+    font-weight: var(--rr-fw-sbold);
+
+    &-four {
+        margin-left: 29px;
+    }
+
+    &-part-1 {
+        font-size: 150px;
+        line-height: 150px;
+        display: flex;
+        align-items: center;
+        letter-spacing: -0.01em;
+        color: #171717;
+        font-family: var(--rr-ff-heading);
+        font-weight: var(--rr-fw-bold);
+
+
+        @media (min-width: 1700px) and (max-width: 1850px) {
+            font-size: 130px;
+        }
+
+        @include breakpoint(xxxl) {
+            font-size: 120px;
+        }
+
+        br {
+            @include breakpoint(xxl) {
+                display: none;
+            }
+        }
+
+        @include breakpoint(xxl) {
+            font-size: 70px;
+            line-height: 100px;
+        }
+
+        @include breakpoint(xl) {
+            font-size: 67px;
+            line-height: 85px;
+        }
+
+        @include breakpoint(lg) {
+            font-size: 47px;
+            line-height: 65px;
+        }
+
+        @include breakpoint(md) {
+            font-size: 42px;
+            line-height: 65px;
+        }
+
+        @include breakpoint(sm) {
+            font-size: 31px;
+            line-height: 46px;
+        }
+    }
+}
+
+.section-heading {
+    &-wrapper {
+        display: flex;
+
+        .sub-title {
+            font-size: 16px;
+            line-height: 19px;
+            display: flex;
+            align-items: center;
+            text-transform: uppercase;
+            color: #171717;
+            font-family: var(--rr-ff-heading);
+            font-weight: var(--rr-fw-medium);
+            position: relative;
+            padding-left: 16px;
+
+            &::before {
+                content: '';
+                left: 0;
+                top: 6px;
+                width: 5px;
+                height: 5px;
+                background: #171717;
+                position: absolute;
+                display: block;
+                border-radius: 100%;
+
+            }
+
+            .section-titles {
+                font-family: 'Inter Tight';
+                font-style: normal;
+                font-weight: 600;
+                font-size: 48px;
+                line-height: 60px;
+                display: flex;
+                align-items: center;
+                color: #171717;
+            }
+        }
+    }
+}
