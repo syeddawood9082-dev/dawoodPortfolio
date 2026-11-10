@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48" height="48" fill="none" stroke="#0F0F0F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+  <!-- Kafka Streaming / Data Flow Icon -->
+  <!-- Hexagon shape with flow arrows -->
+  <path d="M30 8a4 4 0 1 0 0-1"/>
+  <path d="M30 24a4 4 0 1 0 0-1"/>
+  <path d="M30 40a4 4 0 1 0 0-1"/>
+  <path d="M16 16a4 4 0 1 0 0-1"/>
+  <path d="M16 32a4 4 0 1 0 0-1"/>
+  <!-- Connection lines -->
+  <line x1="26" y1="9" x2="20" y2="14"/>
+  <line x1="26" y1="23" x2="20" y2="18"/>
+  <line x1="26" y1="25" x2="20" y2="30"/>
+  <line x1="26" y1="39" x2="20" y2="34"/>
+  <!-- Data flow arrows from left -->
+  <line x1="4" y1="16" x2="12" y2="16"/>
+  <polyline points="9 13 12 16 9 19"/>
+  <line x1="4" y1="32" x2="12" y2="32"/>
+  <polyline points="9 29 12 32 9 35"/>
+  <!-- Data flow arrows to right -->
+  <line x1="34" y1="8" x2="44" y2="8"/>
+  <polyline points="41 5 44 8 41 11"/>
+  <line x1="34" y1="24" x2="44" y2="24"/>
+  <polyline points="41 21 44 24 41 27"/>
+  <line x1="34" y1="40" x2="44" y2="40"/>
+  <polyline points="41 37 44 40 41 43"/>
+</svg>

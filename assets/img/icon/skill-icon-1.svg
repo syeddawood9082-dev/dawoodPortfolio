@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48" height="48" fill="none" stroke="#0F0F0F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+  <!-- Python Snake / Logo Icon -->
+  <!-- Two intertwined snakes representing Python -->
+  <path d="M24 4c-6 0-10 2-10 6v4h10v2H12c-4 0-7 3-7 8s2 8 6 8h3v-5c0-4 3-7 7-7h10c3 0 6-2 6-6V10c0-4-4-6-10-6h-3z"/>
+  <circle cx="18" cy="10" r="1.5" fill="#0F0F0F" stroke="none"/>
+  <path d="M24 44c6 0 10-2 10-6v-4H24v-2h12c4 0 7-3 7-8s-2-8-6-8h-3v5c0 4-3 7-7 7H17c-3 0-6 2-6 6v6c0 4 4 6 10 6h3z"/>
+  <circle cx="30" cy="38" r="1.5" fill="#0F0F0F" stroke="none"/>
+</svg>

@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48" height="48" fill="none" stroke="#0F0F0F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+  <!-- AI/ML Chip / Brain Icon -->
+  <!-- Chip body -->
+  <rect x="12" y="12" width="24" height="24" rx="3"/>
+  <!-- Inner circuit / brain -->
+  <circle cx="24" cy="24" r="6"/>
+  <path d="M21 22c0 0 1.5 3 3 3s3-3 3-3"/>
+  <circle cx="22" cy="21" r="0.8" fill="#0F0F0F" stroke="none"/>
+  <circle cx="26" cy="21" r="0.8" fill="#0F0F0F" stroke="none"/>
+  <!-- Pins top -->
+  <line x1="18" y1="12" x2="18" y2="6"/>
+  <line x1="24" y1="12" x2="24" y2="6"/>
+  <line x1="30" y1="12" x2="30" y2="6"/>
+  <!-- Pins bottom -->
+  <line x1="18" y1="36" x2="18" y2="42"/>
+  <line x1="24" y1="36" x2="24" y2="42"/>
+  <line x1="30" y1="36" x2="30" y2="42"/>
+  <!-- Pins left -->
+  <line x1="12" y1="18" x2="6" y2="18"/>
+  <line x1="12" y1="24" x2="6" y2="24"/>
+  <line x1="12" y1="30" x2="6" y2="30"/>
+  <!-- Pins right -->
+  <line x1="36" y1="18" x2="42" y2="18"/>
+  <line x1="36" y1="24" x2="42" y2="24"/>
+  <line x1="36" y1="30" x2="42" y2="30"/>
+</svg>

@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48" height="48" fill="none" stroke="#0F0F0F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+  <!-- Sailboat Icon (Aark Connect) -->
+  <!-- Hull -->
+  <path d="M4 36l4 6h32l4-6H4z"/>
+  <!-- Mast -->
+  <line x1="24" y1="8" x2="24" y2="36"/>
+  <!-- Main sail (right) -->
+  <path d="M24 10l14 22H24z"/>
+  <!-- Jib sail (left) -->
+  <path d="M24 14l-10 18h10z"/>
+  <!-- Flag -->
+  <path d="M24 8l6 3-6 3"/>
+  <!-- Water waves -->
+  <path d="M2 44c4-2 6 0 10-2s6 0 10-2 6 0 10-2 6 0 10-2"/>
+</svg>

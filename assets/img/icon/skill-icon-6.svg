@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48" height="48" fill="none" stroke="#0F0F0F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+  <!-- Database Icon -->
+  <ellipse cx="24" cy="10" rx="16" ry="6"/>
+  <path d="M8 10v28c0 3.3 7.2 6 16 6s16-2.7 16-6V10"/>
+  <path d="M8 17c0 3.3 7.2 6 16 6s16-2.7 16-6"/>
+  <path d="M8 24c0 3.3 7.2 6 16 6s16-2.7 16-6"/>
+  <path d="M8 31c0 3.3 7.2 6 16 6s16-2.7 16-6"/>
+</svg>
