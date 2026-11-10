@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1070" height="630" viewBox="0 0 1070 630">
+  <rect width="1070" height="630" fill="#14101f"/>
+  <g fill="none" stroke="#8a36ff" stroke-width="3" opacity="0.55">
+    <path d="M-20 470 C 180 410, 320 520, 520 460 S 900 400, 1090 470"/>
+    <path d="M-20 520 C 180 460, 320 570, 520 510 S 900 450, 1090 520" opacity="0.7"/>
+    <path d="M-20 570 C 180 510, 320 620, 520 560 S 900 500, 1090 570" opacity="0.45"/>
+  </g>
+  <g fill="none" stroke="#ffffff" stroke-width="2" opacity="0.25">
+    <path d="M-20 420 C 180 360, 320 470, 520 410 S 900 350, 1090 420"/>
+  </g>
+  <circle cx="72" cy="78" r="7" fill="#8a36ff"/>
+  <text x="94" y="87" font-family="Helvetica, Arial, sans-serif" font-size="22" letter-spacing="5" fill="#cfc4e8">COTIVITI</text>
+  <text x="70" y="238" font-family="Helvetica, Arial, sans-serif" font-weight="700" font-size="66" fill="#ffffff">Data Mountain Cloud</text>
+  <text x="70" y="308" font-family="Helvetica, Arial, sans-serif" font-size="27" fill="#b7a8dd">Streaming healthcare data into a lakehouse</text>
+  <text x="70" y="368" font-family="Helvetica, Arial, sans-serif" font-size="24" fill="#efeaff">Spark Streaming &#183; Hudi &#183; Trino &#183; Kafka &#183; Debezium</text>
+</svg>
